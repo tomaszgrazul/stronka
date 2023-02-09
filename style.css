@@ -1,9 +1,44 @@
+.main-header {
+    height: 120px;
+    /* width: 900px; */
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+   
+}
+
+.sign {
+    height: 120px;
+    width: 200px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Zdjęcia/Sailing_clinta.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 ul {
     display: inline-block;
+    font-size: 15px;
+    color: gray;
+    transition: all 0.3s;
 }
 
 ul:hover {
     cursor: pointer;
     color: pink;
-    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+section {
+    height: 300px;
+    /* background-image: url(../Zdjęcia/gwiazda.jpg); */
 }
