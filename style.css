@@ -1,0 +1,9 @@
+ul {
+    display: inline-block;
+}
+
+ul:hover {
+    cursor: pointer;
+    color: pink;
+    font-size: 30px;
+}
