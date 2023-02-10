@@ -1,6 +1,10 @@
-.main-header {
-    height: 120px;
-    /* width: 900px; */
+
+*{
+    margin: 0;
+}
+    .main-header {
+    height: 150px;
+    width: 100%;
     background-color: white;
     display: flex;
     /* justify-content: center; */
@@ -8,16 +12,30 @@
 }
 
 .sign {
-    height: 120px;
-    width: 200px;
+    height: 150px;
+    width: 250px;
     font-size: 25px;
+    /* color: #494848; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../Zdjęcia/Sailing_clinta.jpg);
+    /* background-image: url(../Zdjęcia/Sailing_clinta.jpg); */
+    background-image: url(../STRONKA/Zdjęcia/Sailing_clinta.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+}
+
+.sign a {
+    text-decoration: none;
+    color: #636161;
+    transition: all 0.3s;
+}
+
+.sign a:hover {
+    cursor: pointer;
+    color: #1b1b1b;
 }
 
 ul {
@@ -29,16 +47,84 @@ ul {
 
 ul:hover {
     cursor: pointer;
-    color: pink;
+    color: #1b1b1b;
 }
 
 nav {
+    width: 100%;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
 
 section {
-    height: 300px;
+    height: 77vh;
+    width: 100%;
     /* background-image: url(../Zdjęcia/gwiazda.jpg); */
+    background-image: url(../STRONKA/Zdjęcia/gwiazda.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+}
+
+.top {
+    background-color: #636161;
+    opacity: 0.7;
+    /* margin-top: 20px; */
+    top: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.top p {
+    color: antiquewhite;
+    font-size: 2.5em;
+    margin: 20px;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.bottom p{
+    font-size: 1.3em;
+    color: aliceblue;
+    margin-left: 250px;
+    padding: 10px;
+}
+
+.social-links{
+    margin-top: 55px;
+    /* text-align: center; */
+    display: flex;
+    /* justify-content: center; */
+}
+
+.social-link{
+    font-size: 2em;
+    color: grey;
+    transition: all 0.3s;
+    margin: 0 20px;
+}
+
+.social-link:hover{
+    color: #1b1b1b;
+}
+
+.footer {
+    background-color: gray;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    bottom: 50px;
+    opacity: 0.7;
+    height: 50px;
+}
+
+.footer p {
+    margin-left: 250px;
 }
