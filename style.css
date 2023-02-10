@@ -58,7 +58,7 @@ nav {
 }
 
 section {
-    height: 77vh;
+    height: 80vh;
     width: 100%;
     /* background-image: url(../Zdjęcia/gwiazda.jpg); */
     background-image: url(../STRONKA/Zdjęcia/gwiazda.jpg);
@@ -114,17 +114,17 @@ section {
     color: #1b1b1b;
 }
 
-.footer {
+footer {
     background-color: gray;
     position: relative;
     display: flex;
     align-items: center;
     /* justify-content: center; */
-    bottom: 50px;
+    bottom: -150px;
     opacity: 0.7;
     height: 50px;
 }
 
-.footer p {
+footer p {
     margin-left: 250px;
 }
