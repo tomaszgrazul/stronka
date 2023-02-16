@@ -2,36 +2,32 @@
 *{
     margin: 0;
     /* cursor: url(../Zdjęcia/pngegg.png), pointer; */
-    cursor: url(../Zdjęcia/Sailing_clinta.jpg) 10 10, auto;
-
-    /* cursor: url('https://www.aurainweb.pl/wp-content/uploads/2019/10/facebook.jpg'), pointer; */
-}
-
-header {
-    box-shadow: 0px 3px 5px rgb(129 126 126);
+    /* cursor: url(../Zdjęcia/Sailing_clinta.jpg) 10 10, auto; */
+    /* height: 43px; */
 }
 
 .main-header {
-    height: 150px;
+    height: 75px;
     width: 100%;
     background-color: white;
     display: flex;
-    /* justify-content: center; */
-   
+    box-shadow: 0px 3px 5px rgb(129 126 126);
+    /* position: fixed;
+    left: 0px;
+    top: 0px; */
 }
 
 .sign {
-    height: 150px;
+    height: 75px;
     width: 250px;
-    font-size: 25px;
+    font-size: 14px;
     font-family: 'Montserrat', sans-serif;
-    /* color: #494848; */
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../Zdjęcia/Sailing_clinta.jpg);
     /* background-image: url(../STRONKA/Zdjęcia/Sailing_clinta.jpg); */
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -50,7 +46,7 @@ header {
 
 ul {
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 100;
     font-family: 'Montserrat', sans-serif;
     color: #9C9C9C;
@@ -69,76 +65,10 @@ nav {
     align-items: center;
 }
 
-section {
-    height: 80vh;
-    width: 100%;
-    background-image: url(../Zdjęcia/gwiazda.jpg);
-    /* background-image: url(../STRONKA/Zdjęcia/gwiazda.jpg); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: black;
-    /* opacity: 0.9; */
-    position: relative;
-    z-index: 0;
-}
-
-.top {
-    background-color: #636161;
-    opacity: 0.7;
-    /* margin-top: 20px; */
-    top: 30px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    z-index: 1;
-}
-.top p {
-    color: antiquewhite;
-    font-size: 2.5em;
-    margin: 20px;
-}
-
-#topGaleria { 
-    font-family: 'Jura', sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    text-shadow: 0px 5px rgb(53, 53, 53);
-    text-align: center;
-    color: #FFFFFF;
-    z-index: 1;
-}
-
-#topEwa {
-    font-family: 'Jura', sans-serif;
-    font-size: 32px;
-    font-weight: 300;
-    letter-spacing: 5px;
-    text-shadow: 0px 5px rgb(53, 53, 53);
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.bottom {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    font-family: 'Cinzel', serif;
-    font-size: 22px;
-}
-.bottom p{
-    font-size: 1.3em;
-    color: aliceblue;
-    margin-left: 250px;
-    padding: 10px;
-}
-
 .social-links{
-    margin-top: 55px;
-    /* text-align: center; */
     display: flex;
-    /* justify-content: center; */
+    height: 75px;
+    align-items: center;
 }
 
 .social-link{
@@ -152,17 +82,83 @@ section {
     color: #1b1b1b;
 }
 
-footer {
-    background-color: gray;
+section {
+    height: 80vh;
+    width: 100%;
+    top: -185px;
+    background-image: url(../Zdjęcia/gwiazda.jpg);
+    /* background-image: url(../STRONKA/Zdjęcia/gwiazda.jpg); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    bottom: -115px;
-    opacity: 0.7;
-    height: 50px;
+    z-index: 0;
 }
 
-footer p {
+.top {
+    background-color: #636161;
+    opacity: 0.7;
+    top: 15px;
+    position: relative;
+    height: 100px;
+    z-index: 1;
+}
+
+#topGaleria { 
+    font-family: 'Jura', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    text-shadow: 0px 5px rgb(53, 53, 53);
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    top: -80px;
+    z-index: 4;
+}
+
+#topEwa {
+    font-family: 'Jura', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-shadow: 0px 5px rgb(53, 53, 53);
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    top: -80px;
+    z-index: 4;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    position: relative;
+    top: -435px;
+    left: -130px;
+    z-index: 4;
+}
+.bottom p{
+    color: aliceblue;
     margin-left: 250px;
+    z-index: 4;
+}
+
+.footer {
+    background-color: gray;
+    position: relative;
+    /* display: flex; */
+    /* align-items: center; */
+    opacity: 0.7;
+    height: 50px;
+    top: -295px;
+    z-index: 4;
+}
+
+#footer {
+    margin-left: 150px;
+    z-index: 4;
+    position: relative;
+    top: -325px;
 }
