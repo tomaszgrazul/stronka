@@ -1,0 +1,17 @@
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+
+
+    background-image: url(../STRONKA/Zdjęcia/Sailing_clinta.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+@media (max-width: 400px) {
+    
+
+} 

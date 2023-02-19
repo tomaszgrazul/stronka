@@ -1,12 +1,13 @@
 
+/* 1. Dlaczego nav-item zmienił kolor?
+2. Dlaczego text-decoration: none działa tylko dla body? 
+3. Dlaczego nie działa hover na nav-item + przyciski*/
+
 *{
     margin: 0;
-    /* cursor: url(../Zdjęcia/pngegg.png), pointer; */
-    /* cursor: url(../Zdjęcia/Sailing_clinta.jpg) 10 10, auto; */
-
-    /* cursor: url('https://www.aurainweb.pl/wp-content/uploads/2019/10/facebook.jpg'), pointer; */
     box-sizing: border-box;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .main-header-container {
@@ -31,8 +32,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url(../Zdjęcia/Sailing_clinta.jpg); */
-    background-image: url(../STRONKA/Zdjęcia/Sailing_clinta.jpg);
+    background-image: url(../Zdjęcia/Sailing_clinta.jpg);
+    /* background-image: url(../STRONKA/Zdjęcia/Sailing_clinta.jpg); */
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -92,64 +93,52 @@ ul {
     color: #1b1b1b;
 }
 
-section {
+.main-akrylowe {
     height: 762px;
     width: 100%;
-    /* background-image: url(../Zdjęcia/gwiazda.jpg); */
-    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url(../STRONKA/Zdjęcia/gwiazda.jpg);
+    background-image: url(../Zdjęcia/mandala.jpg);
     background-size: cover;
-    background-position-y: -170px;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.top-container {
-    background-color: #bab8b887;
-    top: 140px;
+.akrylowe-container {
+    height: 50px;
+    color: rgb(194 24 24);
+    background-color: #ffffffd1;
     position: relative;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    
-}
-.top-text {
-    color: antiquewhite;
-    font-size: 2.5em;
-    margin: 30px;
-    text-shadow: 0px 5px rgb(53, 53, 53);
-    text-align: center;
-    color: #FFFFFF;
-    font-family: 'Jura', sans-serif;
-    letter-spacing: 5px;
+    top: 130px;
 }
 
-.topGaleria { 
-    font-weight: 700;
-    font-size: 40px;
-}
-
-.topEwa {
-    font-size: 32px;
-    font-weight: 300;
-}
-
-.bottom-container {
-    position: relative;
-    top: 190px;
-    font-family: 'Cinzel', serif;
-    font-size: 22px;
-    color: aliceblue;
+.akrylowe-text {
     margin-left: 250px;
-    padding: 15px;
 }
 
-.bottom-text:hover {
-    cursor: pointer;
-    color: pink;
-}
-
-.bottom-text {
-    padding: 10px;
+.btnMain {
+    background-color: white;
+    color: green;
+    height: 120px;
+    width: 220px;
+    position: relative;
     transition: all 0.3s;
+    /* text-decoration: none; */
+}
 
+ .btnMain:hover {
+    cursor: pointer;
+    color: aquamarine;
+ }
+
+.btnMandale {
+    top: 180px;
+    left: 250px;
+}
+
+.btnAbstrakcje {
+    top: 350px;
+    left: 25px;
 }
 
 footer {
@@ -157,7 +146,7 @@ footer {
     position: relative;
     display: flex;
     align-items: center;
-    top: 328px;
+    top: 542px;
     height: 50px;
 }
 
@@ -166,7 +155,7 @@ footer {
     font-family: 'Jura', sans-serif;
     color: #FFFFFF;
 }
-/* dlaczego na komórce musi być 400 */
+
 @media (max-width: 400px) {
     .main-header-sign-container {
         flex-basis: 100%;
@@ -175,6 +164,7 @@ footer {
     .nav-item {
         font-size: 18px;
         padding: 5px;
+        flex-basis: 80%;
     }
 
     .social-link {
@@ -182,21 +172,27 @@ footer {
         flex-basis: 20%;
     }
 
-    .bottom-container,
+    .akrylowe-container {
+        top: 210px;
+    }
+
+    .btnMandale {
+        top: 290px;
+        left: 85px;
+    }
+    
+    .btnAbstrakcje {
+        top: 350px;
+        left: 85px;
+    }
+
+    .akrylowe-text,
     .footer-text {
         margin-left: 70px;
     }
 
-    .top-container {
-        top: 180px;
-    }
-
     footer {
-        top: 250px;
+        top: 370px;
     }
 
-    section {
-        background-position-y: 0;
-    };
-    /* dlaczego li w nav się nie centruje */
 } 
