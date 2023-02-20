@@ -31,8 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url(../Zdjęcia/Sailing_clinta.jpg); */
-    background-image: url(../STRONKA/Zdjęcia/Sailing_clinta.jpg);
+    background-image: url(./img/podpis.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -51,27 +50,31 @@
 
 nav {
     flex-basis: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 ul {
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 .nav-item {
     display: inline-block;
-    padding: 30px;
+    padding: 30px;  
+}
+
+.nav-item a {
+    color: #9C9C9C;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    color: #9C9C9C;
     transition: all 0.3s;
-    /* text-decoration: none; dlaczego nie działa? */
+    text-decoration: none;
 }
 
-.nav-item:hover {
-    cursor: pointer;
+.nav-item a:hover {
     color: pink;
 }
 
@@ -93,10 +96,9 @@ ul {
 }
 
 section {
-    height: 762px;
+    height: 759px;
     width: 100%;
-    /* background-image: url(../Zdjęcia/gwiazda.jpg); */
-    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url(../STRONKA/Zdjęcia/gwiazda.jpg);
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url(./img/gwiazda.jpg);
     background-size: cover;
     background-position-y: -170px;
 }
@@ -121,12 +123,12 @@ section {
     letter-spacing: 5px;
 }
 
-.topGaleria { 
-    font-weight: 700;
+.top-galeria { 
     font-size: 40px;
+    font-weight: 700;
 }
 
-.topEwa {
+.top-ewa {
     font-size: 32px;
     font-weight: 300;
 }
@@ -134,22 +136,21 @@ section {
 .bottom-container {
     position: relative;
     top: 190px;
-    font-family: 'Cinzel', serif;
-    font-size: 22px;
-    color: aliceblue;
     margin-left: 250px;
     padding: 15px;
 }
 
-.bottom-text:hover {
-    cursor: pointer;
-    color: pink;
-}
-
-.bottom-text {
+.bottom-text a {
     padding: 10px;
     transition: all 0.3s;
+    font-family: 'Cinzel', serif;
+    font-size: 22px;
+    color: aliceblue;
+    text-decoration: none;
+}
 
+.bottom-text a:hover {
+    color: pink;
 }
 
 footer {
@@ -157,7 +158,7 @@ footer {
     position: relative;
     display: flex;
     align-items: center;
-    top: 328px;
+    top: 386px;
     height: 50px;
 }
 
@@ -166,10 +167,14 @@ footer {
     font-family: 'Jura', sans-serif;
     color: #FFFFFF;
 }
-/* dlaczego na komórce musi być 400 */
+
 @media (max-width: 400px) {
     .main-header-sign-container {
         flex-basis: 100%;
+    }
+
+    nav {
+        flex-basis: 60%;
     }
 
     .nav-item {
@@ -198,5 +203,4 @@ footer {
     section {
         background-position-y: 0;
     };
-    /* dlaczego li w nav się nie centruje */
 } 
