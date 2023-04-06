@@ -1,0 +1,73 @@
+.akrylowe-abstrakcje {
+    @extend %gallery;
+    // position: initial;
+
+    .gallery-container {
+
+        header {
+            flex-basis: 100%;
+        }
+    }
+
+    .close-akrylowe-abstrakcje {
+        @extend %close;
+    }
+
+    .gallery-picture {
+        flex-basis: 100%;
+
+        .picture-horizontal {
+            width: 400px;
+        }
+    }
+
+    .footer-primary {
+        box-shadow: 0px -3px 5px rgb(129 126 126);
+    }
+}
+
+@media (max-width: 440px) {
+    .akrylowe-abstrakcje {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .gallery-picture {
+                // flex-basis: 33%;
+        
+                .picture-horizontal {
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 441px) and (max-width: 992px) {
+    .akrylowe-abstrakcje {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .gallery-picture {
+                // flex-basis: 50%;
+        
+                .picture-horizontal {
+                    width: 400px;
+                }
+            }
+        }
+    }
+}

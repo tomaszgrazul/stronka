@@ -1,0 +1,156 @@
+%btn-main {
+    background-color: white;
+    color: green;
+    height: 85px;
+    width: 210px;
+    position: relative;
+    transition: all 0.3s;
+    font-family: $third-font;
+    font-size: 15px;
+    letter-spacing: 0.15em;
+
+    // button {
+ 
+        a {
+            text-decoration: none;
+            transition: all .5s;
+    
+            &:hover {
+                background-color: #8FC9D9;
+    
+                button {
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+        }
+    // }
+}
+
+%close{
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    color: #f1f1f1;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+
+    &:hover {
+        color: #bbb;
+        cursor: pointer;
+    }
+}
+
+%frame{
+    border: 8px double rgb(242, 239, 239);
+    // box-shadow: 0 0 10px rgb(150, 150, 150);
+    transition: opacity .5s;
+    position: relative;
+
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+
+%gallery {
+    // position: absolute;
+    // display: none;
+    // transition: opacity 1s;
+    // opacity: 0;
+
+    &.switch-gallery-on {
+        display: block;
+    }
+
+    &.switch-gallery-opacity {
+        opacity: 1;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .gallery-text-1 {
+        text-align: center;
+        padding: 5px;
+        font-family: $third-font;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .gallery-text-2 {
+        text-align: center;
+        padding: 5px;
+        font-family: $third-font;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 130px;
+    
+        header {
+            flex-basis: 100%;
+    
+            p {
+                font-family: $third-font;
+                color: $secondary-font-color;
+                font-size: 20px;
+                padding-bottom: 10px;
+                font-weight: 700;
+                letter-spacing: 0.1em;
+            }
+        }
+
+        .gallery-picture {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .picture-horizontal,
+            .picture-vertical {
+                @extend %frame;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%; 
+                overflow: auto; 
+                background-color: rgb(0,0,0,0.9); 
+                
+                .scale {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    
+                    .scale-1 {
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+
+                        .modal-content {
+                            padding: 30px;
+                            display: block;
+                            max-height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

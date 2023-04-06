@@ -1,0 +1,65 @@
+.szkice {
+   @extend %gallery;
+
+   .close-szkice {
+        @extend %close;
+    }
+
+    .gallery-picture {
+        flex-basis: 35%;
+
+        .picture-horizontal {
+            width: 650px;
+        }
+
+        .picture-vertical {
+            width: 450px;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .szkice {
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p{
+                   text-align: center; 
+                }
+            }
+        }
+
+        .gallery-picture {
+            flex-basis: 35%;
+
+            .picture-horizontal {
+                width: 300px;
+            }
+        
+            .picture-vertical {
+                width: 300px;
+            }
+        }
+    }
+}
+
+@media (min-width: 441px) and (max-width: 1200px) {
+    .szkice {
+        .gallery-container {
+            margin-top: 180px;
+
+            .gallery-picture {
+                flex-basis: 55%;
+
+                .picture-horizontal {
+                    width: 450px;
+                }
+        
+                .picture-vertical {
+                    width: 380px;
+                } 
+            }
+        }
+    }
+}

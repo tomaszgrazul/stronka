@@ -1,0 +1,95 @@
+.olejne-naturalistyczne {
+    @extend %gallery;
+
+    .close-olejne-naturalistyczne {
+        @extend %close;
+    }
+
+    .gallery-picture {
+        flex-basis: 35%;
+
+        .picture-horizontal {
+            width: 650px;
+            // @include overlaySprzedany;
+        }
+
+        .picture-vertical {
+            width: 550px;
+            // @include overlaySprzedany;
+
+            .overlay {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .gallery-text-3 {
+        margin: 0;
+    }
+}
+
+@media (max-width: 440px) {
+    .olejne-naturalistyczne {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .gallery-picture {
+                
+        
+                .picture-horizontal {
+                    width: 300px;
+                    // @include overlaySprzedany;
+                }
+        
+                .picture-vertical {
+                    width: 300px;
+                    // @include overlaySprzedany;
+
+                    .overlay {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 441px) and (max-width: 992px) {
+    .olejne-naturalistyczne {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .gallery-picture {
+                flex-basis: 50%;
+        
+                .picture-horizontal {
+                    width: 400px;
+                    // @include overlaySprzedany;
+                }
+        
+                .picture-vertical {
+                    width: 380px;
+                    // @include overlaySprzedany;
+
+                    .overlay {
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+.olejne {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/olejne.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // display: none;
+    // position: absolute;
+    // transition: opacity 2s;
+    // opacity: 0;
+
+    &.switch-olejne-on {
+        display: block;
+    }
+
+    &.switch-olejne-opacity {
+        opacity: 1;
+    }
+
+    .olejne-container {
+        height: 80px;
+        color: rgb(194 24 24);
+        background-color: rgba(255, 255, 255, 0.7);
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        top: 170px;
+
+        header {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            flex-basis: 100%;
+            
+            .olejne-text {
+                margin-left: 250px;
+                font-family: $third-font;
+                font-size: 22px;
+                font-weight: 700;
+                color: $secondary-font-color
+            }
+        }
+    }
+
+    .btn-abstrakcje-olejne {
+        flex-basis: 100%;
+
+        button {
+            @extend %btn-main;
+            margin: 100px 0 25px 250px;
+        }
+    }
+    
+    .btn-naturalistyczne {
+        flex-basis: 100%;
+
+        button {
+            @extend %btn-main;
+            margin: 25px 0 0 250px;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .olejne {
+
+        .olejne-container {
+            top: 210px;
+
+            header {
+                justify-content: center;
+
+                .olejne-text {
+                    margin: 0;
+                }
+            }
+
+        }
+    
+        .btn-abstrakcje-olejne,
+        .btn-naturalistyczne {
+            display: flex;
+            justify-content: center;
+
+            button {
+                margin: 50px;
+            }
+        }
+    }
+} 
+
+@media (min-width: 491px) and (max-width: 992px) {
+    .olejne {
+
+        .olejne-container {
+            top: 180px;
+            justify-content: center;
+
+            .olejne-text {
+                margin: 0;
+            }
+        }
+    
+        .btn-abstrakcje-olejne {
+            top: 290px;
+            left: 85px;
+        }
+        
+        .btn-naturalistyczne{
+            top: 450px;
+            left: -150px;
+        }
+    }
+} 
+
+
+

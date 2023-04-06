@@ -1,0 +1,99 @@
+%top-text {
+    margin: 30px;
+    text-shadow: 0px 5px rgb(53, 53, 53);
+    text-align: center;
+    color: white;
+    font-family: $secondary-font;
+    letter-spacing: 0.25em;
+}
+
+.main-section {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5) ), url('../img/gwiazda.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // background-position: center;
+    position: absolute;
+    transition: opacity 2s;
+
+    &.switch-main-off {
+        display: none;
+    }
+
+    .top-container {
+        background-color: rgba(255, 255, 255, 0.45);
+        top: 190px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-direction: column;  
+
+        .top-galeria { 
+            @extend %top-text;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        
+        .top-ewa {
+            @extend %top-text;
+            font-size: 32px;
+            font-weight: 300;
+        }
+    }
+
+    .bottom-container {
+        position: relative;
+        top: 310px;
+        margin-left: 250px;
+
+        p {
+            // padding-bottom: 5px;
+            // padding: 10px;
+            line-height: 1.4em;
+            font-family: 'Cinzel', serif;
+            font-size: 20px;
+
+            a {
+                text-decoration: none;
+                transition: all 0.3s;
+                color: aliceblue;
+    
+                &:hover {
+                    color: $main-section-hover-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .main-section {
+        background-position: center;
+
+        .top-container {
+            top: 200px;
+
+            .top-galeria {
+                font-size: 32px;
+                margin: 10px;
+            }
+
+            .top-ewa {
+                font-size: 26px;
+                margin: 10px;
+            }
+        }
+
+        .bottom-container{
+            margin-left: 70px;
+            top: 380px;
+
+            p {
+                padding: 5px;
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.akrylowe-mandale {
+    @extend %gallery;
+
+    .close-akrylowe-mandale {
+        @extend %close;
+    }
+
+    .gallery-picture {
+        flex-basis: 26%;
+
+        .picture-horizontal {
+            width: 470px;
+            // @include overlaySprzedany;
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .akrylowe-mandale {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .gallery-picture {
+                flex-basis: 33%;
+        
+                .picture-horizontal {
+                    width: 300px;
+                    // @include overlaySprzedany;
+
+                        .overlay {
+                            font-size: 30px;
+                        }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 441px) and (max-width: 1200px) {
+    .akrylowe-mandale {
+
+        .gallery-container {
+            margin-top: 180px;
+
+            header {
+                p {
+                   text-align: center; 
+                }
+            }
+
+            .gallery-picture {
+                flex-basis: 50%;
+        
+                .picture-horizontal {
+                    width: 400px;
+                    // @include overlaySprzedany;
+                }
+            }
+        }
+    }
+}

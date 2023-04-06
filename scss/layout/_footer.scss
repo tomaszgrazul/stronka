@@ -1,0 +1,38 @@
+%footer {
+    background-color: rgba(255, 255, 255, 0.7);
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+
+    height: 50px;
+    width: 100%;
+    // display: none;
+
+    .footer-text {
+        margin-left: 250px;
+        font-family: 'Jura', sans-serif;
+        color: #243236;
+    }
+}
+
+.footer-primary {
+    @extend %footer;
+}
+
+.footer-secondary {
+    @extend %footer;
+    position: initial;
+    box-shadow: 0px -3px 5px rgb(129 126 126);
+    margin-top: 20px;
+}
+
+@media (max-width: 400px) {
+    .footer-primary,
+    .footer-secondary {
+
+        .footer-text {
+            margin-left: 70px;
+        }
+    }
+}
