@@ -44,9 +44,12 @@
     .btn-mandale {
         flex-basis: 100%;
 
-        button {
+        .button {
             @extend %btn-main;
             margin: 100px 0 25px 250px;
+            text-decoration: none;
+            color: green;
+            padding: 30px 60px;
         }
     }
     

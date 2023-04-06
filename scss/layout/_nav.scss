@@ -46,7 +46,6 @@ nav {
             .nav-item {
                 display: inline-block;
                 padding: 30px; 
-                color: #9C9C9C;
                 font-family: $primary-font;
                 font-size: 16px;
                 font-weight: 300;
@@ -54,6 +53,7 @@ nav {
                 a {
                     transition: all 0.3s;
                     text-decoration: none;
+                    color: #9C9C9C;
         
                     &:hover {
                         color: $main-header-hover-color;

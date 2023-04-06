@@ -1,6 +1,6 @@
 %btn-main {
     background-color: white;
-    color: green;
+    transition: all .5s;
     height: 85px;
     width: 210px;
     position: relative;
@@ -8,21 +8,22 @@
     font-family: $third-font;
     font-size: 15px;
     letter-spacing: 0.15em;
+    color: green;
+    // a {
+    //     text-decoration: none;
+
+    //     color: green;
+    // }
 
     // button {
  
-        a {
-            text-decoration: none;
-            transition: all .5s;
-    
-            &:hover {
-                background-color: #8FC9D9;
-    
-                button {
-                    color: white;
-                    cursor: pointer;
-                }
-            }
+        &:hover {
+            background-color: #8FC9D9;
+
+            // button {
+                color: white;
+                cursor: pointer;
+            // }
         }
     // }
 }

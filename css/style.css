@@ -1,7 +1,7 @@
 @charset "UTF-8";
-.akrylowe .btn-abstrakcje button, .akrylowe .btn-mandale button, .olejne .btn-naturalistyczne button, .olejne .btn-abstrakcje-olejne button {
+.akrylowe .btn-abstrakcje button, .akrylowe .btn-mandale .button, .olejne .btn-naturalistyczne button, .olejne .btn-abstrakcje-olejne button {
   background-color: white;
-  color: green;
+  transition: all 0.5s;
   height: 85px;
   width: 210px;
   position: relative;
@@ -9,15 +9,10 @@
   font-family: "Cinzel", serif;
   font-size: 15px;
   letter-spacing: 0.15em;
+  color: green;
 }
-.akrylowe .btn-abstrakcje button a, .akrylowe .btn-mandale button a, .olejne .btn-naturalistyczne button a, .olejne .btn-abstrakcje-olejne button a {
-  text-decoration: none;
-  transition: all 0.5s;
-}
-.akrylowe .btn-abstrakcje button a:hover, .akrylowe .btn-mandale button a:hover, .olejne .btn-naturalistyczne button a:hover, .olejne .btn-abstrakcje-olejne button a:hover {
+.akrylowe .btn-abstrakcje button:hover, .akrylowe .btn-mandale .button:hover, .olejne .btn-naturalistyczne button:hover, .olejne .btn-abstrakcje-olejne button:hover {
   background-color: #8FC9D9;
-}
-.akrylowe .btn-abstrakcje button a:hover button, .akrylowe .btn-mandale button a:hover button, .olejne .btn-naturalistyczne button a:hover button, .olejne .btn-abstrakcje-olejne button a:hover button {
   color: white;
   cursor: pointer;
 }
@@ -511,7 +506,6 @@ nav .open-menu-holder ul {
 nav .open-menu-holder ul .nav-item {
   display: inline-block;
   padding: 30px;
-  color: #9C9C9C;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -519,6 +513,7 @@ nav .open-menu-holder ul .nav-item {
 nav .open-menu-holder ul .nav-item a {
   transition: all 0.3s;
   text-decoration: none;
+  color: #9C9C9C;
 }
 nav .open-menu-holder ul .nav-item a:hover {
   color: pink;
@@ -1017,8 +1012,11 @@ nav .open-menu-holder ul .nav-item a:hover {
 .akrylowe .btn-mandale {
   flex-basis: 100%;
 }
-.akrylowe .btn-mandale button {
+.akrylowe .btn-mandale .button {
   margin: 100px 0 25px 250px;
+  text-decoration: none;
+  color: green;
+  padding: 30px 60px;
 }
 .akrylowe .btn-abstrakcje {
   flex-basis: 100%;
