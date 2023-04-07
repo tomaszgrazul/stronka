@@ -1,17 +1,14 @@
 @charset "UTF-8";
-.akrylowe .btn-abstrakcje button, .akrylowe .btn-mandale .button, .olejne .btn-naturalistyczne button, .olejne .btn-abstrakcje-olejne button {
+.akrylowe .btn-abstrakcje .button, .akrylowe .btn-mandale .button, .olejne .btn-naturalistyczne button, .olejne .btn-abstrakcje-olejne button {
   background-color: white;
-  transition: all 0.5s;
-  height: 85px;
-  width: 210px;
-  position: relative;
   transition: all 0.3s;
   font-family: "Cinzel", serif;
   font-size: 15px;
   letter-spacing: 0.15em;
+  text-decoration: none;
   color: green;
 }
-.akrylowe .btn-abstrakcje button:hover, .akrylowe .btn-mandale .button:hover, .olejne .btn-naturalistyczne button:hover, .olejne .btn-abstrakcje-olejne button:hover {
+.akrylowe .btn-abstrakcje .button:hover, .akrylowe .btn-mandale .button:hover, .olejne .btn-naturalistyczne button:hover, .olejne .btn-abstrakcje-olejne button:hover {
   background-color: #8FC9D9;
   color: white;
   cursor: pointer;
@@ -1010,19 +1007,22 @@ nav .open-menu-holder ul .nav-item a:hover {
   color: #AA2C18;
 }
 .akrylowe .btn-mandale {
-  flex-basis: 100%;
+  display: flex;
+  position: relative;
+  top: 100px;
+  left: 215px;
+  border: 1px solid rgb(57, 57, 110);
 }
 .akrylowe .btn-mandale .button {
-  margin: 100px 0 25px 250px;
-  text-decoration: none;
-  color: green;
-  padding: 30px 60px;
+  padding: 30px 60px 31px 61px;
 }
 .akrylowe .btn-abstrakcje {
-  flex-basis: 100%;
+  border: 1px solid rgb(57, 57, 110);
+  position: relative;
+  top: 200px;
 }
-.akrylowe .btn-abstrakcje button {
-  margin: 25px 0 0 250px;
+.akrylowe .btn-abstrakcje .button {
+  padding: 30px 60px;
 }
 
 @media (max-width: 490px) {
