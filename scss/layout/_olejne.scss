@@ -10,13 +10,13 @@
     // transition: opacity 2s;
     // opacity: 0;
 
-    &.switch-olejne-on {
-        display: block;
-    }
+    // &.switch-olejne-on {
+    //     display: block;
+    // }
 
-    &.switch-olejne-opacity {
-        opacity: 1;
-    }
+    // &.switch-olejne-opacity {
+    //     opacity: 1;
+    // }
 
     .olejne-container {
         height: 80px;
@@ -42,32 +42,43 @@
                 color: $secondary-font-color
             }
         }
-    }
 
-    .btn-abstrakcje-olejne {
-        flex-basis: 100%;
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            margin: 60px 0 0 250px;
 
-        button {
-            @extend %btn-main;
-            margin: 100px 0 25px 250px;
-        }
-    }
-    
-    .btn-naturalistyczne {
-        flex-basis: 100%;
-
-        button {
-            @extend %btn-main;
-            margin: 25px 0 0 250px;
+            .btn-abstrakcje-olejne {
+                height: 85px;
+                display: flex;
+                border: 1px solid rgb(57, 57, 110);
+                margin-bottom: 10px;
+                
+                .buttonTop {
+                    @extend %btn-main;
+                    padding: 30px 60px 30px 60px;
+                }
+            }
+            
+            .btn-naturalistyczne {
+                display: flex;
+                height: 85px;
+                border: 1px solid rgb(57, 57, 110);
+                
+                .buttonBottom {
+                    @extend %btn-main;
+                    padding: 30px 28px 30px 28px;
+                }
+            }
         }
     }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 576px) {
     .olejne {
 
         .olejne-container {
-            top: 210px;
+            justify-content: center;
 
             header {
                 justify-content: center;
@@ -77,43 +88,13 @@
                 }
             }
 
-        }
-    
-        .btn-abstrakcje-olejne,
-        .btn-naturalistyczne {
-            display: flex;
-            justify-content: center;
-
-            button {
-                margin: 50px;
+            .buttons {
+                margin: 60px 0 0 0;
             }
         }
     }
 } 
 
-@media (min-width: 491px) and (max-width: 992px) {
-    .olejne {
-
-        .olejne-container {
-            top: 180px;
-            justify-content: center;
-
-            .olejne-text {
-                margin: 0;
-            }
-        }
-    
-        .btn-abstrakcje-olejne {
-            top: 290px;
-            left: 85px;
-        }
-        
-        .btn-naturalistyczne{
-            top: 450px;
-            left: -150px;
-        }
-    }
-} 
 
 
 

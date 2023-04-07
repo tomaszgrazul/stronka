@@ -12,3 +12,15 @@ var modalOlejneAbstrakcje = document.querySelectorAll('#modal-img-olejne-abstrak
     document.getElementsByClassName('close-olejne-abstrakcje')[0].addEventListener('click', function() { 
     document.getElementById('my-modal-olejne-abstrakcje').style.display = 'none';
     });
+
+
+    
+    document.getElementsByClassName('fa-bars')[0].addEventListener('click', function() {
+    
+        document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
+    });
+    
+    document.getElementsByClassName('fa-times')[0].addEventListener('click', function() {
+    
+        document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
+    });

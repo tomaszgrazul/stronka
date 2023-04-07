@@ -12,3 +12,14 @@ var modalSzkice = document.querySelectorAll('#modal-img-szkice');
     document.getElementsByClassName('close-szkice')[0].addEventListener('click', function() { 
         document.getElementById('my-modal-szkice').style.display = 'none';
     });
+
+
+    document.getElementsByClassName('fa-bars')[0].addEventListener('click', function() {
+    
+        document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
+    });
+    
+    document.getElementsByClassName('fa-times')[0].addEventListener('click', function() {
+    
+        document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
+    });
