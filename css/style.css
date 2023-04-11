@@ -36,7 +36,6 @@
 .akrylowe-mandale .gallery-container .gallery-picture .picture-vertical {
   border: 8px double rgb(242, 239, 239);
   transition: opacity 0.5s;
-  position: relative;
 }
 .contact .contact-container .picture:hover, .szkice .gallery-container .gallery-picture .picture-horizontal:hover, .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal:hover, .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover, .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-horizontal:hover, .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal:hover,
 .szkice .gallery-container .gallery-picture .picture-vertical:hover,
@@ -455,10 +454,14 @@ input[type=checkbox], input[type=radio] {
 }
 @media print {
   .main-header-container .main-header-sign-container {
-    flex-basis: 15%;
+    flex-basis: 20%;
   }
   .main-header-container .main-header-sign-container img {
     height: 70px;
+  }
+  .main-header-container .social-links .social-link {
+    margin: 0 10px;
+    font-size: 20px;
   }
 }
 nav {
@@ -569,7 +572,7 @@ nav .open-menu-holder ul .nav-item a:hover {
     align-items: center;
   }
   .main-header-container nav .open-menu-holder ul .nav-item {
-    padding: 20px;
+    padding: 10px;
     font-size: 20px;
   }
   .main-header-container .fa-bars,
@@ -1021,187 +1024,169 @@ nav .open-menu-holder ul .nav-item a:hover {
     margin: 60px 0 0 0;
   }
 }
-.contact.switch-contact-on {
-  display: block;
-}
 .contact.switch-contact-opacity {
   opacity: 1;
 }
-.contact .contact-container {
+.contact .contact-container .picture {
+  pointer-events: none;
+  margin-top: 70px;
+  height: 100%;
+}
+.contact .contact-container .picture .img-vertical {
+  width: 350px;
+}
+.contact .contact-container .contact-container-top {
   display: flex;
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
   top: 180px;
 }
-.contact .contact-container .contact-header {
-  flex-basis: 100%;
-  font-family: "Cinzel", serif;
-  color: #48656D;
-  font-size: 22px;
-}
-.contact .contact-container .contact-header p {
-  position: relative;
-  margin-bottom: 20px;
-}
-.contact .contact-container .picture {
-  pointer-events: none;
-}
-.contact .contact-container .contact-text {
-  flex-basis: 40%;
+.contact .contact-container .contact-container-top .contact-text {
+  flex-basis: 30%;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.8em;
-}
-.contact .contact-container .contact-text p {
   margin-left: 40px;
+}
+.contact .contact-container .contact-container-top .contact-text h2 {
+  font-family: "Cinzel", serif;
+  font-weight: 100;
+  font-size: 24px;
+  color: #48656D;
+  letter-spacing: 0.1em;
+}
+.contact .contact-container .contact-container-top .contact-text p {
   text-transform: none;
   color: #4A4A4A;
 }
-.contact .contact-container .contact-text .contact-text-1 {
+.contact .contact-container .contact-container-top .contact-text .contact-text-1 {
   padding-top: 20px;
 }
-.contact .contact-container address {
+.contact .contact-container .contact-container-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: center;
+  top: 200px;
+}
+.contact .contact-container .contact-container-bottom .contact-sign-address {
+  flex-basis: 30%;
+}
+.contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign {
+  margin-left: 40px;
+}
+.contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign img {
+  width: 250px;
+}
+.contact .contact-container .contact-container-bottom .contact-sign-address address {
   font-family: "Rubik", sans-serif;
   font-weight: 700;
   font-size: 14px;
-  position: relative;
-  flex-basis: 40%;
-  top: 65px;
-  right: -25px;
+  font-style: normal;
+  margin-top: 40px;
 }
-.contact .contact-container address p {
+.contact .contact-container .contact-container-bottom .contact-sign-address address p {
   padding: 10px;
   margin-left: 30px;
   text-transform: none;
   color: #AA2C18;
 }
-.contact .contact-sign {
-  flex-basis: 100%;
-  height: 60px;
-}
-.contact .contact-sign img {
-  width: 200px;
-  position: relative;
-  top: 20px;
-  left: 480px;
-}
-.contact .img-vertical {
-  width: 300px;
-}
 
 @media (max-width: 576px) {
-  .contact .contact-container .contact-header p {
+  .contact .contact-container .picture {
+    margin: 0;
+  }
+  .contact .contact-container .picture .img-vertical {
+    width: 250px;
+  }
+  .contact .contact-container .contact-container-top .contact-text {
+    flex-basis: 50%;
+    font-size: 13px;
+    line-height: 1.2em;
+    margin-left: 20px;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address {
+    flex-basis: 50%;
+    order: 1;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address address {
+    margin: 0;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address address p {
     text-align: center;
+    margin: 0;
   }
-  .contact .contact-container .contact-text {
-    flex-basis: 60%;
+  .contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign {
+    margin: 0;
   }
-  .contact .contact-container .contact-sign {
-    height: 80px;
-    text-align: center;
+  .contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign img {
+    width: 150px;
   }
-  .contact .contact-container .contact-sign img {
-    position: initial;
+  .contact .contact-container .contact-container-bottom .picture {
+    order: 2;
   }
-  .contact .contact-container address {
-    position: initial;
-    text-align: center;
+  .contact .contact-container .contact-container-bottom footer {
+    order: 3;
+    justify-content: center;
   }
-  .contact .contact-container address p {
+  .contact .contact-container .contact-container-bottom footer p {
     margin: 0;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
-  .contact .contact-container .contact-header p {
-    left: 420px;
-  }
-  .contact .contact-container .contact-text {
-    font-size: 11px;
-    line-height: 1.2em;
-  }
-  .contact .img-vertical {
+  .contact .contact-container .picture .img-vertical {
     width: 250px;
   }
-  .contact .contact-sign img {
-    left: 330px;
+  .contact .contact-container .contact-container-top .contact-text {
+    flex-basis: 45%;
+    font-size: 13px;
+    line-height: 1.2em;
+    margin-left: 20px;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address {
+    flex-basis: 45%;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign img {
+    width: 150px;
   }
 }
 @media (min-width: 769px) and (max-width: 992px) {
-  .contact .contact-container .contact-header p {
-    left: 480px;
+  .contact .contact-container .picture .img-vertical {
+    width: 250px;
   }
-  .contact .contact-container .contact-text {
-    font-size: 12px;
+  .contact .contact-container .contact-container-top .contact-text {
+    font-size: 14px;
     line-height: 1.5em;
   }
-  .contact .contact-sign img {
-    left: 400px;
+  .contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign img {
+    width: 180px;
   }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
-  .contact .contact-container .contact-header p {
-    left: 480px;
-  }
-  .contact .contact-container .contact-text {
+  .contact .contact-container .contact-container-top .contact-text {
     font-size: 14px;
   }
-  .contact .contact-container .contact-text .contact-text-1 {
+  .contact .contact-container .contact-container-top .contact-text .contact-text-1 {
     padding-top: 14px;
   }
 }
-@media (min-width: 1201px) {
-  .contact .contact-header p {
-    left: 675px;
-  }
-  .contact .contact-sign img {
-    left: 675px;
-  }
-  .contact .contact-container .picture {
-    width: 385px;
-  }
-  .contact .contact-container .picture .img-vertical {
-    width: 370px;
-  }
-}
 @media print {
-  html, body {
-    width: 210mm;
-    height: 297mm;
+  .contact .contact-container .picture .img-vertical {
+    width: 150px;
   }
-  .contact .contact-container {
-    left: 150px;
+  .contact .contact-container .contact-container-top .contact-text {
+    flex-basis: 45%;
+    font-size: 13px;
+    line-height: 1.2em;
+    margin-left: 20px;
   }
-  .contact .contact-container .contact-header p {
-    left: 130px;
+  .contact .contact-container .contact-container-bottom .contact-sign-address {
+    flex-basis: 45%;
   }
-  .contact .contact-container .picture {
-    flex-basis: 32%;
-  }
-  .contact .contact-container .contact-text {
-    width: 40%;
-    font-size: 15px;
-  }
-  .contact .contact-container .contact-text p {
-    padding: 5px;
-  }
-  .contact .contact-container .contact-sign {
-    flex-basis: 100%;
-  }
-  .contact .contact-container .contact-sign img {
-    left: 120px;
-  }
-  .contact .contact-container address {
-    flex-basis: 40%;
-    top: 65px;
-    right: -25px;
-  }
-  .contact .contact-container address p {
-    margin: 0;
-  }
-  .contact .img-vertical {
-    width: 300px;
+  .contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign img {
+    width: 150px;
   }
 }
 .footer-secondary, .footer-primary {
