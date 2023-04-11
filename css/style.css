@@ -916,13 +916,13 @@ nav .open-menu-holder ul .nav-item a:hover {
   }
 }
 .szkice .gallery-picture {
-  flex-basis: 35%;
+  flex-basis: 40%;
 }
 .szkice .gallery-picture .picture-horizontal {
-  width: 650px;
+  width: 550px;
 }
 .szkice .gallery-picture .picture-vertical {
-  width: 450px;
+  width: 400px;
 }
 
 @media (max-width: 440px) {
@@ -947,7 +947,7 @@ nav .open-menu-holder ul .nav-item a:hover {
     margin-top: 180px;
   }
   .szkice .gallery-container .gallery-picture {
-    flex-basis: 55%;
+    flex-basis: 409%;
   }
   .szkice .gallery-container .gallery-picture .picture-horizontal {
     width: 450px;
@@ -1072,10 +1072,10 @@ nav .open-menu-holder ul .nav-item a:hover {
   top: 200px;
 }
 .contact .contact-container .contact-container-bottom .contact-sign-address {
-  flex-basis: 30%;
+  flex-basis: 33%;
 }
 .contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign {
-  margin-left: 40px;
+  margin-left: 20px;
 }
 .contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign img {
   width: 250px;
@@ -1173,20 +1173,39 @@ nav .open-menu-holder ul .nav-item a:hover {
   }
 }
 @media print {
+  .contact .contact-container .picture {
+    margin-top: 55px;
+  }
   .contact .contact-container .picture .img-vertical {
-    width: 150px;
+    width: 250px;
+  }
+  .contact .contact-container .contact-container-top {
+    top: 140px;
   }
   .contact .contact-container .contact-container-top .contact-text {
-    flex-basis: 45%;
+    flex-basis: 35%;
     font-size: 13px;
-    line-height: 1.2em;
+    line-height: 1.1em;
     margin-left: 20px;
   }
+  .contact .contact-container .contact-container-bottom {
+    top: 130px;
+  }
+  .contact .contact-container .contact-container-bottom .picture {
+    order: 1;
+  }
   .contact .contact-container .contact-container-bottom .contact-sign-address {
-    flex-basis: 45%;
+    flex-basis: 35%;
+    order: 2;
   }
   .contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign img {
     width: 150px;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address address {
+    margin-top: 20px;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address address p {
+    margin: 0;
   }
 }
 .footer-secondary, .footer-primary {
