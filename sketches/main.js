@@ -6,6 +6,9 @@ var modalSzkice = document.querySelectorAll('#modal-img-szkice');
 
             document.getElementById('my-modal-szkice').style.display = 'block';
             document.getElementById('img-szkice').src = this.src;
+            document.getElementById('modal-img-szkice').style.removeProperty('height');
+            // document.getElementById('modal-img-szkice').removeAttribute('height');
+            // document.getElementById('modal-img-szkice').style.height = null;
         })
     };
 

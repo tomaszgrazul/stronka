@@ -64,6 +64,11 @@
         .main-header-sign-container {
             flex-basis: 45%;
             font-size: 19px;
+            height: 90px;
+
+            img {
+                height: 90px;
+            }
         }
 
         .social-links {

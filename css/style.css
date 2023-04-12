@@ -446,6 +446,10 @@ input[type=checkbox], input[type=radio] {
   .main-header-container .main-header-sign-container {
     flex-basis: 45%;
     font-size: 19px;
+    height: 90px;
+  }
+  .main-header-container .main-header-sign-container img {
+    height: 90px;
   }
   .main-header-container .social-links {
     flex-basis: 10%;
@@ -698,6 +702,9 @@ nav .open-menu-holder ul .nav-item a:hover {
 }
 
 @media (max-width: 768px) {
+  .akrylowe-mandale .close-akrylowe-mandale {
+    font-size: 60px;
+  }
   .akrylowe-mandale .gallery-container header {
     text-align: center;
   }
@@ -739,6 +746,9 @@ nav .open-menu-holder ul .nav-item a:hover {
 }
 
 @media (max-width: 440px) {
+  .akrylowe-abstrakcje .close-akrylowe-abstrakcje {
+    font-size: 60px;
+  }
   .akrylowe-abstrakcje .gallery-container {
     margin-top: 180px;
   }
@@ -845,6 +855,9 @@ nav .open-menu-holder ul .nav-item a:hover {
 }
 
 @media (max-width: 768px) {
+  .olejne-abstrakcje .close-olejne-abstrakcje {
+    font-size: 60px;
+  }
   .olejne-abstrakcje .gallery-container header p {
     text-align: center;
   }
@@ -901,6 +914,9 @@ nav .open-menu-holder ul .nav-item a:hover {
 }
 
 @media (max-width: 768px) {
+  .olejne-naturalistyczne .close-olejne-naturalistyczne {
+    font-size: 60px;
+  }
   .olejne-naturalistyczne .gallery-container header p {
     text-align: center;
   }
@@ -951,6 +967,9 @@ nav .open-menu-holder ul .nav-item a:hover {
 }
 
 @media (max-width: 768px) {
+  .szkice .close-szkice {
+    font-size: 60px;
+  }
   .szkice .gallery-container header {
     text-align: center;
   }
