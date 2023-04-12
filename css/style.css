@@ -78,16 +78,25 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 130px;
+  width: 980px;
 }
 .szkice .gallery-container header, .olejne-naturalistyczne .gallery-container header, .olejne-abstrakcje .gallery-container header, .akrylowe-abstrakcje .gallery-container header, .akrylowe-mandale .gallery-container header {
-  flex-basis: 100%;
+  margin-top: 20px;
 }
-.szkice .gallery-container header p, .olejne-naturalistyczne .gallery-container header p, .olejne-abstrakcje .gallery-container header p, .akrylowe-abstrakcje .gallery-container header p, .akrylowe-mandale .gallery-container header p {
+.szkice .gallery-container header :nth-child(1), .olejne-naturalistyczne .gallery-container header :nth-child(1), .olejne-abstrakcje .gallery-container header :nth-child(1), .akrylowe-abstrakcje .gallery-container header :nth-child(1), .akrylowe-mandale .gallery-container header :nth-child(1) {
   font-family: "Cinzel", serif;
   color: #AA2C18;
   font-size: 20px;
   padding-bottom: 10px;
   font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.szkice .gallery-container header :nth-child(2), .olejne-naturalistyczne .gallery-container header :nth-child(2), .olejne-abstrakcje .gallery-container header :nth-child(2), .akrylowe-abstrakcje .gallery-container header :nth-child(2), .akrylowe-mandale .gallery-container header :nth-child(2) {
+  font-family: "Cinzel", serif;
+  color: black;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-weight: normal;
   letter-spacing: 0.1em;
 }
 .szkice .gallery-container .gallery-picture, .olejne-naturalistyczne .gallery-container .gallery-picture, .olejne-abstrakcje .gallery-container .gallery-picture, .akrylowe-abstrakcje .gallery-container .gallery-picture, .akrylowe-mandale .gallery-container .gallery-picture {
@@ -369,6 +378,16 @@ input[type=checkbox], input[type=radio] {
   margin: 0;
   box-sizing: border-box;
   text-transform: uppercase;
+}
+
+.szkice,
+.akrylowe-abstrakcje,
+.akrylowe-mandale,
+.olejne-abstrakcje,
+.olejne-naturalistyczne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-header-container {
@@ -668,42 +687,42 @@ nav .open-menu-holder ul .nav-item a:hover {
     font-size: 20px;
   }
 }
+.akrylowe-mandale header {
+  flex-basis: 95%;
+}
 .akrylowe-mandale .gallery-picture {
-  flex-basis: 28%;
+  flex-basis: 33%;
 }
 .akrylowe-mandale .gallery-picture .picture-horizontal {
-  width: 400px;
+  width: 300px;
 }
 
-@media (max-width: 440px) {
-  .akrylowe-mandale .gallery-container {
-    margin-top: 180px;
-  }
-  .akrylowe-mandale .gallery-container header p {
+@media (max-width: 768px) {
+  .akrylowe-mandale .gallery-container header {
     text-align: center;
   }
   .akrylowe-mandale .gallery-container .gallery-picture {
-    flex-basis: 33%;
+    flex-basis: 51%;
   }
   .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal {
     width: 300px;
   }
-  .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal .overlay {
-    font-size: 30px;
+  .akrylowe-mandale .footer-secondary {
+    justify-content: center;
+  }
+  .akrylowe-mandale .footer-secondary .footer-text {
+    margin: 0;
   }
 }
-@media (min-width: 441px) and (max-width: 1200px) {
-  .akrylowe-mandale .gallery-container {
-    margin-top: 180px;
-  }
-  .akrylowe-mandale .gallery-container header p {
-    text-align: center;
+@media (min-width: 769px) and (max-width: 992px) {
+  .akrylowe-mandale .gallery-container header {
+    flex-basis: 66%;
   }
   .akrylowe-mandale .gallery-container .gallery-picture {
-    flex-basis: 50%;
+    flex-basis: 37%;
   }
   .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal {
-    width: 400px;
+    width: 290px;
   }
 }
 .akrylowe-abstrakcje .gallery-container header {
@@ -809,64 +828,67 @@ nav .open-menu-holder ul .nav-item a:hover {
     margin: 60px 0 0 0;
   }
 }
+.olejne-abstrakcje header {
+  flex-basis: 95%;
+}
 .olejne-abstrakcje .gallery-picture {
-  flex-basis: 25%;
+  flex-basis: 33%;
 }
 .olejne-abstrakcje .gallery-picture .picture-horizontal {
-  width: 600px;
+  width: 475px;
 }
 .olejne-abstrakcje .gallery-picture .picture-vertical {
-  width: 430px;
-}
-.olejne-abstrakcje .gallery-picture .picture-vertical .overlay {
-  font-size: 30px;
+  width: 300px;
 }
 .olejne-abstrakcje .gallery-text-3 {
   margin: 0;
 }
 
-@media (max-width: 440px) {
-  .olejne-abstrakcje .gallery-container {
-    margin-top: 180px;
-  }
-  .olejne-abstrakcje .gallery-container header p {
-    text-align: center;
-  }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
-    width: 300px;
-  }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical {
-    width: 300px;
-  }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical .overlay {
-    font-size: 30px;
-  }
-}
-@media (min-width: 441px) and (max-width: 992px) {
-  .olejne-abstrakcje .gallery-container {
-    margin-top: 180px;
-  }
+@media (max-width: 768px) {
   .olejne-abstrakcje .gallery-container header p {
     text-align: center;
   }
   .olejne-abstrakcje .gallery-container .gallery-picture {
-    flex-basis: 50%;
+    flex-basis: 51%;
   }
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
-    width: 400px;
+    width: 300px;
   }
   .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical {
-    width: 380px;
+    width: 300px;
   }
-  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical .overlay {
-    font-size: 30px;
+  .olejne-abstrakcje .footer-secondary {
+    justify-content: center;
   }
+  .olejne-abstrakcje .footer-secondary .footer-text {
+    margin: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .olejne-abstrakcje .gallery-container {
+    margin-top: 180px;
+  }
+  .olejne-abstrakcje .gallery-container header {
+    flex-basis: 68%;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture {
+    flex-basis: 37%;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal {
+    width: 620px;
+  }
+  .olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical {
+    width: 320px;
+  }
+}
+.olejne-naturalistyczne header {
+  flex-basis: 95%;
 }
 .olejne-naturalistyczne .gallery-picture {
-  flex-basis: 35%;
+  flex-basis: 50%;
 }
 .olejne-naturalistyczne .gallery-picture .picture-horizontal {
-  width: 450px;
+  width: 460px;
 }
 .olejne-naturalistyczne .gallery-picture .picture-vertical {
   width: 350px;
@@ -878,45 +900,48 @@ nav .open-menu-holder ul .nav-item a:hover {
   margin: 0;
 }
 
-@media (max-width: 440px) {
-  .olejne-naturalistyczne .gallery-container {
-    margin-top: 180px;
-  }
-  .olejne-naturalistyczne .gallery-container header p {
-    text-align: center;
-  }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal {
-    width: 300px;
-  }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical {
-    width: 300px;
-  }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical .overlay {
-    font-size: 30px;
-  }
-}
-@media (min-width: 441px) and (max-width: 992px) {
-  .olejne-naturalistyczne .gallery-container {
-    margin-top: 180px;
-  }
+@media (max-width: 768px) {
   .olejne-naturalistyczne .gallery-container header p {
     text-align: center;
   }
   .olejne-naturalistyczne .gallery-container .gallery-picture {
-    flex-basis: 50%;
+    flex-basis: 51%;
   }
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal {
-    width: 400px;
+    width: 300px;
   }
   .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical {
-    width: 380px;
+    width: 300px;
   }
-  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical .overlay {
-    font-size: 30px;
+  .olejne-naturalistyczne .footer-secondary {
+    justify-content: center;
+  }
+  .olejne-naturalistyczne .footer-secondary .footer-text {
+    margin: 0;
   }
 }
+@media (min-width: 769px) and (max-width: 992px) {
+  .olejne-naturalistyczne .gallery-container {
+    margin-top: 180px;
+  }
+  .olejne-naturalistyczne .gallery-container header {
+    flex-basis: 51%;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture {
+    flex-basis: 51%;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal {
+    width: 500px;
+  }
+  .olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical {
+    width: 370px;
+  }
+}
+.szkice header {
+  flex-basis: 95%;
+}
 .szkice .gallery-picture {
-  flex-basis: 35%;
+  flex-basis: 50%;
 }
 .szkice .gallery-picture .picture-horizontal {
   width: 450px;
@@ -925,35 +950,38 @@ nav .open-menu-holder ul .nav-item a:hover {
   width: 350px;
 }
 
-@media (max-width: 440px) {
-  .szkice .gallery-container {
-    margin-top: 180px;
-  }
-  .szkice .gallery-container header p {
+@media (max-width: 768px) {
+  .szkice .gallery-container header {
     text-align: center;
   }
-  .szkice .gallery-picture {
-    flex-basis: 35%;
-  }
-  .szkice .gallery-picture .picture-horizontal {
-    width: 300px;
-  }
-  .szkice .gallery-picture .picture-vertical {
-    width: 300px;
-  }
-}
-@media (min-width: 441px) and (max-width: 1200px) {
-  .szkice .gallery-container {
-    margin-top: 180px;
-  }
   .szkice .gallery-container .gallery-picture {
-    flex-basis: 409%;
+    flex-basis: 51%;
   }
   .szkice .gallery-container .gallery-picture .picture-horizontal {
-    width: 450px;
+    width: 350px;
   }
   .szkice .gallery-container .gallery-picture .picture-vertical {
-    width: 380px;
+    width: 250px;
+  }
+  .szkice .footer-secondary {
+    justify-content: center;
+  }
+  .szkice .footer-secondary .footer-text {
+    margin: 0;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .szkice .gallery-container header {
+    flex-basis: 75%;
+  }
+  .szkice .gallery-container .gallery-picture {
+    flex-basis: 40%;
+  }
+  .szkice .gallery-container .gallery-picture .picture-horizontal {
+    width: 350px;
+  }
+  .szkice .gallery-container .gallery-picture .picture-vertical {
+    width: 250px;
   }
 }
 .akrylowe {
