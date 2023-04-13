@@ -1,10 +1,14 @@
-var modalOlejneNaturalistyczne = document.querySelectorAll('#modal-img-olejne-naturalistyczne');
+var modalOlejneNaturalistyczne = document.querySelectorAll('.modal-img-olejne-naturalistyczne');
 
     for (var i = 0, j = modalOlejneNaturalistyczne.length; i < j; i++) {
 
         modalOlejneNaturalistyczne[i].addEventListener('click', function(){
 
             document.getElementById('my-modal-olejne-naturalistyczne').style.display = 'block';
+            const image = document.createElement('img');
+            image.setAttribute('class', 'modal-content');
+            image.setAttribute('id', 'img-olejne-naturalistyczne');
+            document.querySelector('.scale-1').appendChild(image);
             document.getElementById('img-olejne-naturalistyczne').src = this.src;
         })
     };

@@ -1,10 +1,14 @@
-var modalAkryloweMandale = document.querySelectorAll('#modal-img-akrylowe-mandale');
-console.log(modalAkryloweMandale);
+var modalAkryloweMandale = document.querySelectorAll('.modal-img-akrylowe-mandale');
+
     for (var i = 0, j = modalAkryloweMandale.length; i < j; i++) {
 
         modalAkryloweMandale[i].addEventListener('click', function(){
 
             document.getElementById('my-modal-akrylowe-mandale').style.display = 'block';
+            const image = document.createElement('img');
+            image.setAttribute('class', 'modal-content');
+            image.setAttribute('id', 'img-akrylowe-mandale');
+            document.querySelector('.scale-1').appendChild(image);
             document.getElementById('img-akrylowe-mandale').src = this.src;
         })
     };

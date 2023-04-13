@@ -1,10 +1,14 @@
-var modalAkryloweAbstrakcje = document.querySelectorAll('#modal-img-akrylowe-abstrakcje');
-console.log(modalAkryloweAbstrakcje);
+var modalAkryloweAbstrakcje = document.querySelectorAll('.modal-img-akrylowe-abstrakcje');
+
     for (var i = 0, j = modalAkryloweAbstrakcje.length; i < j; i++) {
 
         modalAkryloweAbstrakcje[i].addEventListener('click', function(){
 
             document.getElementById('my-modal-akrylowe-abstrakcje').style.display = 'block';
+            const image = document.createElement('img');
+            image.setAttribute('class', 'modal-content');
+            image.setAttribute('id', 'img-akrylowe-abstrakcje');
+            document.querySelector('.scale-1').appendChild(image);
             document.getElementById('img-akrylowe-abstrakcje').src = this.src;
         })
     };
