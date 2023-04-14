@@ -1,3 +1,11 @@
 1. Jak wyœwietliæ w modalu obrazek na ca³ym monitorze a nie w oknie przegl¹darki
 2. Na telefonie inaczej wyœwietla
-3. Jak usun¹æ height z modal-img
+3. Jak usun¹æ height z picture-horizontal img
+4. Jak prze³¹czaæ index.html dla wersji jêzykowej
+5. drukowanie
+
+Modu³y w node.js a react?
+
+sta¿
+
+czas kursu?
