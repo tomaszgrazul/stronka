@@ -1,6 +1,6 @@
-var modalOlejneAbstrakcje = document.querySelectorAll('.modal-img-olejne-abstrakcje');
+    const modalOlejneAbstrakcje = document.querySelectorAll('.modal-img-olejne-abstrakcje');
 
-    for (var i = 0, j = modalOlejneAbstrakcje.length; i < j; i++) {
+    for (let i = 0, j = modalOlejneAbstrakcje.length; i < j; i++) {
 
         modalOlejneAbstrakcje[i].addEventListener('click', function(){
 
@@ -28,3 +28,13 @@ var modalOlejneAbstrakcje = document.querySelectorAll('.modal-img-olejne-abstrak
     
         document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
     });
+
+    const navItem = document.querySelectorAll('.nav-item');
+
+    for (let i = 0; i <= navItem.length - 1; i++) {
+
+        navItem[i].addEventListener('click', function() {
+
+            document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
+        });
+    }

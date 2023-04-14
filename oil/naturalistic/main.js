@@ -1,6 +1,6 @@
-var modalOlejneNaturalistyczne = document.querySelectorAll('.modal-img-olejne-naturalistyczne');
+    const modalOlejneNaturalistyczne = document.querySelectorAll('.modal-img-olejne-naturalistyczne');
 
-    for (var i = 0, j = modalOlejneNaturalistyczne.length; i < j; i++) {
+    for (let i = 0, j = modalOlejneNaturalistyczne.length; i < j; i++) {
 
         modalOlejneNaturalistyczne[i].addEventListener('click', function(){
 
@@ -28,3 +28,13 @@ var modalOlejneNaturalistyczne = document.querySelectorAll('.modal-img-olejne-na
     
         document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
     });
+
+    const navItem = document.querySelectorAll('.nav-item');
+
+    for (let i = 0; i <= navItem.length - 1; i++) {
+
+        navItem[i].addEventListener('click', function() {
+
+            document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
+        });
+    }

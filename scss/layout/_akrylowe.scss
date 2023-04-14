@@ -52,7 +52,7 @@
                 
                 .buttonTop {
                     @extend %btn-main;
-                    padding: 30px 60px 30px 60px;
+                    padding: 30px 63px 30px 64px;
                 }
             }
             
@@ -75,6 +75,7 @@
 
         .akrylowe-container {
             justify-content: center;
+            top: 140px;
 
             header {
                 justify-content: center;

@@ -78,7 +78,7 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 130px;
-  width: 980px;
+  max-width: 980px;
 }
 .szkice .gallery-container header, .olejne-naturalistyczne .gallery-container header, .olejne-abstrakcje .gallery-container header, .akrylowe-abstrakcje .gallery-container header, .akrylowe-mandale .gallery-container header {
   margin-top: 20px;
@@ -133,6 +133,9 @@
   height: 100%;
   display: flex;
   align-items: center;
+}
+.szkice .gallery-container .gallery-picture .modal .scale .scale-1 img, .olejne-naturalistyczne .gallery-container .gallery-picture .modal .scale .scale-1 img, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1 img, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1 img, .akrylowe-mandale .gallery-container .gallery-picture .modal .scale .scale-1 img {
+  height: auto;
 }
 .szkice .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .olejne-naturalistyczne .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .olejne-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content, .akrylowe-mandale .gallery-container .gallery-picture .modal .scale .scale-1 .modal-content {
   padding: 30px;
@@ -426,20 +429,34 @@ input[type=checkbox], input[type=radio] {
   color: pink;
   cursor: pointer;
 }
-
-.social-links {
+.main-header-container .social-links {
   display: flex;
   flex-basis: 15%;
   align-items: center;
 }
-.social-links .social-link {
+.main-header-container .social-links .social-link {
   font-size: 25px;
   color: grey;
   transition: all 0.3s;
   margin: 0 20px;
 }
-.social-links .social-link:hover {
+.main-header-container .social-links .social-link:hover {
   color: #1b1b1b;
+}
+.main-header-container .language-switch {
+  display: flex;
+  flex-basis: 10%;
+  align-items: center;
+  justify-content: center;
+}
+.main-header-container .language-switch a {
+  transition: all 0.3s;
+  text-decoration: none;
+  color: #9C9C9C;
+}
+.main-header-container .language-switch a:hover {
+  color: pink;
+  cursor: pointer;
 }
 
 @media (min-width: 300px) and (max-width: 576px) {
@@ -488,7 +505,6 @@ input[type=checkbox], input[type=radio] {
   }
 }
 nav {
-  flex-basis: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -573,7 +589,7 @@ nav .open-menu-holder ul .nav-item a:hover {
 }
 @media (min-width: 993px) {
   .main-header-container nav {
-    flex-basis: 63%;
+    flex-basis: 57%;
   }
   .main-header-container .fa-bars,
   .main-header-container .mobile-close {
@@ -672,7 +688,7 @@ nav .open-menu-holder ul .nav-item a:hover {
     background-position: center;
   }
   .main-section .top-container {
-    top: 200px;
+    top: 140px;
   }
   .main-section .top-container .top-galeria {
     font-size: 32px;
@@ -684,11 +700,11 @@ nav .open-menu-holder ul .nav-item a:hover {
   }
   .main-section .bottom-container {
     margin-left: 70px;
-    top: 380px;
+    top: 300px;
   }
   .main-section .bottom-container p {
     padding: 5px;
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 .akrylowe-mandale header {
@@ -705,8 +721,12 @@ nav .open-menu-holder ul .nav-item a:hover {
   .akrylowe-mandale .close-akrylowe-mandale {
     font-size: 60px;
   }
+  .akrylowe-mandale .gallery-container {
+    margin-top: 120px;
+  }
   .akrylowe-mandale .gallery-container header {
     text-align: center;
+    margin: 0;
   }
   .akrylowe-mandale .gallery-container .gallery-picture {
     flex-basis: 51%;
@@ -733,7 +753,7 @@ nav .open-menu-holder ul .nav-item a:hover {
   }
 }
 .akrylowe-abstrakcje .gallery-container header {
-  flex-basis: 100%;
+  flex-basis: 65%;
 }
 .akrylowe-abstrakcje .gallery-picture {
   flex-basis: 100%;
@@ -750,7 +770,10 @@ nav .open-menu-holder ul .nav-item a:hover {
     font-size: 60px;
   }
   .akrylowe-abstrakcje .gallery-container {
-    margin-top: 180px;
+    margin-top: 120px;
+  }
+  .akrylowe-abstrakcje .gallery-container header {
+    margin: 0;
   }
   .akrylowe-abstrakcje .gallery-container header p {
     text-align: center;
@@ -827,6 +850,7 @@ nav .open-menu-holder ul .nav-item a:hover {
 @media (max-width: 576px) {
   .olejne .olejne-container {
     justify-content: center;
+    top: 140px;
   }
   .olejne .olejne-container header {
     justify-content: center;
@@ -857,6 +881,12 @@ nav .open-menu-holder ul .nav-item a:hover {
 @media (max-width: 768px) {
   .olejne-abstrakcje .close-olejne-abstrakcje {
     font-size: 60px;
+  }
+  .olejne-abstrakcje .gallery-container {
+    margin-top: 120px;
+  }
+  .olejne-abstrakcje .gallery-container header {
+    margin: 0;
   }
   .olejne-abstrakcje .gallery-container header p {
     text-align: center;
@@ -917,6 +947,12 @@ nav .open-menu-holder ul .nav-item a:hover {
   .olejne-naturalistyczne .close-olejne-naturalistyczne {
     font-size: 60px;
   }
+  .olejne-naturalistyczne .gallery-container {
+    margin-top: 120px;
+  }
+  .olejne-naturalistyczne .gallery-container header {
+    margin: 0;
+  }
   .olejne-naturalistyczne .gallery-container header p {
     text-align: center;
   }
@@ -970,8 +1006,12 @@ nav .open-menu-holder ul .nav-item a:hover {
   .szkice .close-szkice {
     font-size: 60px;
   }
+  .szkice .gallery-container {
+    margin-top: 110px;
+  }
   .szkice .gallery-container header {
     text-align: center;
+    margin: 0;
   }
   .szkice .gallery-container .gallery-picture {
     flex-basis: 51%;
@@ -1046,7 +1086,7 @@ nav .open-menu-holder ul .nav-item a:hover {
   margin-bottom: 10px;
 }
 .akrylowe .akrylowe-container .buttons .btn-mandale .buttonTop {
-  padding: 30px 60px 30px 60px;
+  padding: 30px 63px 30px 64px;
 }
 .akrylowe .akrylowe-container .buttons .btn-abstrakcje {
   display: flex;
@@ -1060,6 +1100,7 @@ nav .open-menu-holder ul .nav-item a:hover {
 @media (max-width: 576px) {
   .akrylowe .akrylowe-container {
     justify-content: center;
+    top: 140px;
   }
   .akrylowe .akrylowe-container header {
     justify-content: center;
@@ -1116,7 +1157,7 @@ nav .open-menu-holder ul .nav-item a:hover {
   flex-wrap: wrap;
   position: relative;
   justify-content: center;
-  top: 200px;
+  top: 140px;
 }
 .contact .contact-container .contact-container-bottom .contact-sign-address {
   flex-basis: 33%;
@@ -1148,14 +1189,16 @@ nav .open-menu-holder ul .nav-item a:hover {
   .contact .contact-container .picture .img-vertical {
     width: 250px;
   }
+  .contact .contact-container .contact-container-top {
+    top: 130px;
+  }
   .contact .contact-container .contact-container-top .contact-text {
-    flex-basis: 50%;
+    flex-basis: 66%;
     font-size: 13px;
-    line-height: 1.2em;
-    margin-left: 20px;
+    margin-left: 0;
   }
   .contact .contact-container .contact-container-bottom .contact-sign-address {
-    flex-basis: 50%;
+    flex-basis: 45%;
     order: 1;
   }
   .contact .contact-container .contact-container-bottom .contact-sign-address address {

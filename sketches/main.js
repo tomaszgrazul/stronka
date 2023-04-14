@@ -1,24 +1,25 @@
-var modalSzkice = document.querySelectorAll('.modal-img-szkice');
+    const modalSzkice = document.querySelectorAll('.modal-img-szkice');
 
-    for (var i = 0, j = modalSzkice.length; i < j; i++) {
+    for (let i = 0, j = modalSzkice.length; i < j; i++) {
 
         modalSzkice[i].addEventListener('click', function(){
 
             document.getElementById('my-modal-szkice').style.display = 'block';
+
             const image = document.createElement('img');
             image.setAttribute('class', 'modal-content');
             image.setAttribute('id', 'img-szkice');
             document.querySelector('.scale-1').appendChild(image);
             document.getElementById('img-szkice').src = this.src;
-            document.getElementById('modal-img-szkice').style.removeProperty('height');
-            // document.getElementById('modal-img-szkice').removeAttribute('height');
-            // document.getElementById('modal-img-szkice').style.height = null;
         })
     };
 
     document.getElementsByClassName('close-szkice')[0].addEventListener('click', function() { 
+
         document.getElementById('my-modal-szkice').style.display = 'none';
     });
+
+
 
 
     document.getElementsByClassName('fa-bars')[0].addEventListener('click', function() {
@@ -30,3 +31,13 @@ var modalSzkice = document.querySelectorAll('.modal-img-szkice');
     
         document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
     });
+
+    const navItem = document.querySelectorAll('.nav-item');
+
+    for (let i = 0; i <= navItem.length - 1; i++) {
+
+        navItem[i].addEventListener('click', function() {
+
+            document.getElementsByClassName('open-menu-holder')[0].classList.toggle('open');
+        });
+    }

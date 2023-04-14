@@ -65,7 +65,7 @@
             flex-wrap: wrap;
             position: relative;
             justify-content: center;
-            top: 200px;
+            top: 140px;
 
             .contact-sign-address {
                 flex-basis: 33%;
@@ -111,19 +111,19 @@
             }
            
             .contact-container-top {
+                top: 130px;
 
                 .contact-text {
-                    flex-basis: 50%;
+                    flex-basis: 66%;
                     font-size: 13px;
-                    line-height: 1.2em;
-                    margin-left: 20px;
+                    margin-left: 0;
                 }
             }
 
             .contact-container-bottom {
                 
                 .contact-sign-address {
-                    flex-basis: 50%;
+                    flex-basis: 45%;
                     order: 1;
                     
                     address {

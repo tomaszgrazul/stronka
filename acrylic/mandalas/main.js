@@ -10,9 +10,6 @@ var modalAkryloweMandale = document.querySelectorAll('.modal-img-akrylowe-mandal
             image.setAttribute('id', 'img-akrylowe-mandale');
             document.querySelector('.scale-1').appendChild(image);
             document.getElementById('img-akrylowe-mandale').src = this.src;
-            document.getElementById('modal-img-akrylowe-mandale').style.removeProperty('height');
-            // document.getElementById('modal-img-akrylowe-mandale').removeAttribute('height');
-            // document.getElementById('modal-img-akrylowe-mandale').style.height = null;
         })
     };
 
