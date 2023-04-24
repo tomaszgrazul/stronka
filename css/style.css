@@ -453,6 +453,7 @@ input[type=checkbox], input[type=radio] {
   transition: all 0.3s;
   text-decoration: none;
   color: #9C9C9C;
+  padding-left: 10px;
 }
 .main-header-container .language-switch a:hover {
   color: pink;
