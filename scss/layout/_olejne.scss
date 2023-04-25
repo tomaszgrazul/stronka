@@ -5,18 +5,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    // display: none;
-    // position: absolute;
-    // transition: opacity 2s;
-    // opacity: 0;
-
-    // &.switch-olejne-on {
-    //     display: block;
-    // }
-
-    // &.switch-olejne-opacity {
-    //     opacity: 1;
-    // }
 
     .olejne-container {
         height: 80px;
@@ -48,27 +36,34 @@
             flex-direction: column;
             margin: 60px 0 0 250px;
 
-            .btn-abstrakcje-olejne {
+            a {
+                background-color: white;
+                transition: all 0.3s;
+                font-family: $third-font;
+                font-size: 15px;
+                letter-spacing: 0.15em;
+                text-decoration: none;
+                color: green;
                 height: 85px;
+                width: 200px;
                 display: flex;
+                justify-content: center;
+                align-items: center;
+ 
+                &:hover {
+                    background-color: #8FC9D9;
+                    color: white;
+                    cursor: pointer;
+                }
+            }
+
+            .btn-abstrakcje-olejne {   
                 border: 1px solid rgb(57, 57, 110);
                 margin-bottom: 10px;
-                
-                .buttonTop {
-                    @extend %btn-main;
-                    padding: 30px 60px 30px 60px;
-                }
             }
             
             .btn-naturalistyczne {
-                display: flex;
-                height: 85px;
                 border: 1px solid rgb(57, 57, 110);
-                
-                .buttonBottom {
-                    @extend %btn-main;
-                    padding: 30px 28px 30px 28px;
-                }
             }
         }
     }

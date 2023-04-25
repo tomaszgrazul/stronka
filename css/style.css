@@ -1,19 +1,4 @@
 @charset "UTF-8";
-.akrylowe .akrylowe-container .buttons .btn-abstrakcje .buttonBottom, .akrylowe .akrylowe-container .buttons .btn-mandale .buttonTop, .olejne .olejne-container .buttons .btn-naturalistyczne .buttonBottom, .olejne .olejne-container .buttons .btn-abstrakcje-olejne .buttonTop {
-  background-color: white;
-  transition: all 0.3s;
-  font-family: "Cinzel", serif;
-  font-size: 15px;
-  letter-spacing: 0.15em;
-  text-decoration: none;
-  color: green;
-}
-.akrylowe .akrylowe-container .buttons .btn-abstrakcje .buttonBottom:hover, .akrylowe .akrylowe-container .buttons .btn-mandale .buttonTop:hover, .olejne .olejne-container .buttons .btn-naturalistyczne .buttonBottom:hover, .olejne .olejne-container .buttons .btn-abstrakcje-olejne .buttonTop:hover {
-  background-color: #8FC9D9;
-  color: white;
-  cursor: pointer;
-}
-
 .szkice .close-szkice, .olejne-naturalistyczne .close-olejne-naturalistyczne, .olejne-abstrakcje .close-olejne-abstrakcje, .akrylowe-abstrakcje .close-akrylowe-abstrakcje, .akrylowe-mandale .close-akrylowe-mandale {
   position: fixed;
   top: 0px;
@@ -830,22 +815,31 @@ nav .open-menu-holder ul .nav-item a:hover {
   flex-direction: column;
   margin: 60px 0 0 250px;
 }
-.olejne .olejne-container .buttons .btn-abstrakcje-olejne {
+.olejne .olejne-container .buttons a {
+  background-color: white;
+  transition: all 0.3s;
+  font-family: "Cinzel", serif;
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: green;
   height: 85px;
+  width: 200px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.olejne .olejne-container .buttons a:hover {
+  background-color: #8FC9D9;
+  color: white;
+  cursor: pointer;
+}
+.olejne .olejne-container .buttons .btn-abstrakcje-olejne {
   border: 1px solid rgb(57, 57, 110);
   margin-bottom: 10px;
 }
-.olejne .olejne-container .buttons .btn-abstrakcje-olejne .buttonTop {
-  padding: 30px 60px 30px 60px;
-}
 .olejne .olejne-container .buttons .btn-naturalistyczne {
-  display: flex;
-  height: 85px;
   border: 1px solid rgb(57, 57, 110);
-}
-.olejne .olejne-container .buttons .btn-naturalistyczne .buttonBottom {
-  padding: 30px 28px 30px 28px;
 }
 
 @media (max-width: 576px) {
@@ -1080,22 +1074,31 @@ nav .open-menu-holder ul .nav-item a:hover {
   flex-direction: column;
   margin: 60px 0 0 250px;
 }
-.akrylowe .akrylowe-container .buttons .btn-mandale {
+.akrylowe .akrylowe-container .buttons a {
+  background-color: white;
+  transition: all 0.3s;
+  font-family: "Cinzel", serif;
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: green;
   height: 85px;
+  width: 200px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.akrylowe .akrylowe-container .buttons a:hover {
+  background-color: #8FC9D9;
+  color: white;
+  cursor: pointer;
+}
+.akrylowe .akrylowe-container .buttons .btn-mandale {
   border: 1px solid rgb(57, 57, 110);
   margin-bottom: 10px;
 }
-.akrylowe .akrylowe-container .buttons .btn-mandale .buttonTop {
-  padding: 30px 63px 30px 64px;
-}
 .akrylowe .akrylowe-container .buttons .btn-abstrakcje {
-  display: flex;
-  height: 85px;
   border: 1px solid rgb(57, 57, 110);
-}
-.akrylowe .akrylowe-container .buttons .btn-abstrakcje .buttonBottom {
-  padding: 30px 50px 30px 50px;
 }
 
 @media (max-width: 576px) {
