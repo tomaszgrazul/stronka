@@ -445,14 +445,14 @@ input[type=checkbox], input[type=radio] {
   cursor: pointer;
 }
 
-@media (min-width: 300px) and (max-width: 576px) {
+@media (max-width: 576px) {
   .main-header-container .main-header-sign-container {
-    flex-basis: 45%;
+    flex-basis: 100%;
     font-size: 19px;
-    height: 90px;
+    height: 70px;
   }
   .main-header-container .main-header-sign-container img {
-    height: 90px;
+    height: 85px;
   }
   .main-header-container .social-links {
     flex-basis: 10%;
@@ -549,6 +549,9 @@ nav .open-menu-holder ul .nav-item a:hover {
   .main-header-container nav {
     flex-basis: 10%;
   }
+  .main-header-container nav .fa-bars {
+    line-height: 40px;
+  }
   .main-header-container nav .open-menu-holder .nav-item {
     padding: 20px;
     font-size: 25px;
@@ -557,6 +560,9 @@ nav .open-menu-holder ul .nav-item a:hover {
 @media (min-width: 400px) and (max-width: 576px) {
   .main-header-container nav {
     flex-basis: 10%;
+  }
+  .main-header-container nav .fa-bars {
+    line-height: 40px;
   }
   .main-header-container nav .open-menu-holder .nav-item {
     padding: 20px;

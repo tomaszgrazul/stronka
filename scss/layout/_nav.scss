@@ -1,5 +1,4 @@
 nav {
-    // flex-basis: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,9 +15,7 @@ nav {
         background-color: rgb(34, 25, 25);
         top: 0;
         right: 0;
-        // max-width: 480px;
         width: 220px;
-        // text-align: right;
         padding: 12px 23px;
         display: none;
 
@@ -71,6 +68,10 @@ nav {
         nav {
             flex-basis: 10%;
 
+            .fa-bars {
+                line-height: 40px;
+            }
+
             .open-menu-holder {
 
                 .nav-item {
@@ -87,6 +88,10 @@ nav {
 
         nav {
             flex-basis: 10%;
+
+            .fa-bars {
+                line-height: 40px;
+            }
 
             .open-menu-holder {
 
