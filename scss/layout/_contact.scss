@@ -7,20 +7,20 @@
     //     display: block;
     // }
 
-    &.switch-contact-opacity {
-        opacity: 1;
-    }
+    // &.switch-contact-opacity {
+    //     opacity: 1;
+    // }
 
    .contact-container {
 
     .picture {
         @extend %frame;
         pointer-events: none;
-        margin-top: 70px;
+        margin-top: 50px;
         height: 100%;
 
         .img-vertical {
-            width: 350px;
+            width: 280px;
        }
      }
 
@@ -32,11 +32,11 @@
             top: 180px;
     
             .contact-text {
-                flex-basis: 30%;
+                flex-basis: 34%;
                 font-family: $fourth-font;
                 font-weight: 300;
                 font-size: 16px;
-                line-height: 1.8em;
+                line-height: 1.6em;
                 margin-left: 40px;
 
                 h2 {
@@ -46,6 +46,7 @@
                     color: #48656D;
                     letter-spacing: 0.1em;
                     // margin-left: 40px;
+                    padding-bottom: 20px;
                 }
     
                 p {  
@@ -65,16 +66,16 @@
             flex-wrap: wrap;
             position: relative;
             justify-content: center;
-            top: 140px;
+            top: 160px;
 
             .contact-sign-address {
-                flex-basis: 33%;
+                flex-basis: 37%;
 
                 .contact-sign {
                     margin-left: 20px;
             
                     img {
-                        width: 250px;
+                        width: 240px;
                     }
                 }
     

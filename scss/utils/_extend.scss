@@ -31,13 +31,13 @@
     // transition: opacity 1s;
     // opacity: 0;
 
-    &.switch-gallery-on {
-        display: block;
-    }
+    // &.switch-gallery-on {
+    //     display: block;
+    // }
 
-    &.switch-gallery-opacity {
-        opacity: 1;
-    }
+    // &.switch-gallery-opacity {
+    //     opacity: 1;
+    // }
 
     img {
         width: 100%;
@@ -51,6 +51,7 @@
         font-family: $third-font;
         font-size: 16px;
         font-weight: 600;
+        margin-top: 20px;
     }
 
     .gallery-text-2 {
