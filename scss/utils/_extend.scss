@@ -1,3 +1,12 @@
+%top-text {
+    margin: 30px;
+    text-shadow: 0px 5px rgb(53, 53, 53);
+    text-align: center;
+    color: white;
+    font-family: $secondary-font;
+    letter-spacing: 0.25em;
+}
+
 %close{
     position: fixed;
     top: 0px;
@@ -49,7 +58,7 @@
         text-align: center;
         padding: 5px;
         font-family: $third-font;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         margin-top: 20px;
     }
@@ -58,7 +67,7 @@
         text-align: center;
         padding: 5px;
         font-family: $third-font;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         margin-bottom: 20px;
     }
@@ -85,8 +94,8 @@
             :nth-child(2) {
                 font-family: $third-font;
                 color: black;
-                font-size: 20px;
-                padding-bottom: 10px;
+                font-size: 16px;
+                padding-bottom: 30px;
                 font-weight: normal;
                 letter-spacing: 0.1em;
             }

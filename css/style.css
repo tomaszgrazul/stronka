@@ -1,3 +1,12 @@
+.main-section .top-container .top-ewa, .main-section .top-container .top-galeria {
+  margin: 30px;
+  text-shadow: 0px 5px rgb(53, 53, 53);
+  text-align: center;
+  color: white;
+  font-family: "Jura", sans-serif;
+  letter-spacing: 0.25em;
+}
+
 .szkice .close-szkice, .olejne-naturalistyczne .close-olejne-naturalistyczne, .olejne-abstrakcje .close-olejne-abstrakcje, .akrylowe-abstrakcje .close-akrylowe-abstrakcje, .akrylowe-mandale .close-akrylowe-mandale {
   position: fixed;
   top: 0px;
@@ -40,7 +49,7 @@
   text-align: center;
   padding: 5px;
   font-family: "Cinzel", serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin-top: 20px;
 }
@@ -48,7 +57,7 @@
   text-align: center;
   padding: 5px;
   font-family: "Cinzel", serif;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -73,8 +82,8 @@
 .szkice .gallery-container header :nth-child(2), .olejne-naturalistyczne .gallery-container header :nth-child(2), .olejne-abstrakcje .gallery-container header :nth-child(2), .akrylowe-abstrakcje .gallery-container header :nth-child(2), .akrylowe-mandale .gallery-container header :nth-child(2) {
   font-family: "Cinzel", serif;
   color: black;
-  font-size: 20px;
-  padding-bottom: 10px;
+  font-size: 16px;
+  padding-bottom: 30px;
   font-weight: normal;
   letter-spacing: 0.1em;
 }
@@ -652,26 +661,12 @@ nav .open-menu-holder ul .nav-item a:hover {
     padding: 0;
   }
 }
-.main-section .top-container .top-ewa, .main-section .top-container .top-galeria {
-  margin: 30px;
-  text-shadow: 0px 5px rgb(53, 53, 53);
-  text-align: center;
-  color: white;
-  font-family: "Jura", sans-serif;
-  letter-spacing: 0.25em;
-}
-
 .main-section {
   height: 100vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/gwiazda.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  position: absolute;
-  transition: opacity 2s;
-}
-.main-section.switch-main-off {
-  display: none;
 }
 .main-section .top-container {
   background-color: rgba(255, 255, 255, 0.45);
@@ -688,6 +683,7 @@ nav .open-menu-holder ul .nav-item a:hover {
 .main-section .top-container .top-ewa {
   font-size: 32px;
   font-weight: 300;
+  text-transform: none;
 }
 .main-section .bottom-container {
   position: relative;
@@ -886,7 +882,7 @@ nav .open-menu-holder ul .nav-item a:hover {
   font-size: 15px;
   letter-spacing: 0.15em;
   text-decoration: none;
-  color: green;
+  color: #243236;
   height: 85px;
   width: 200px;
   display: flex;
@@ -1151,7 +1147,7 @@ nav .open-menu-holder ul .nav-item a:hover {
   font-size: 15px;
   letter-spacing: 0.15em;
   text-decoration: none;
-  color: green;
+  color: #243236;
   height: 85px;
   width: 200px;
   display: flex;
@@ -1212,7 +1208,7 @@ nav .open-menu-holder ul .nav-item a:hover {
 .contact .contact-container .contact-container-top .contact-text h2 {
   font-family: "Cinzel", serif;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 20px;
   color: #48656D;
   letter-spacing: 0.1em;
   padding-bottom: 20px;
