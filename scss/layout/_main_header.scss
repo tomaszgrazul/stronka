@@ -126,29 +126,3 @@
         }
     }
 }
-
-@media print {
-// @media (max-width: 850px ) {
-
-    .main-header-container {
-
-        .main-header-sign-container {
-            flex-basis: 20%;
-            // font-size: 16px;
-
-            img {
-                height: 70px;
-            }
-        }
-
-        .social-links {
-            // flex-basis: 10%;
-            // justify-content: center;
-
-            .social-link {
-                margin: 0 10px;
-                font-size: 20px;
-            }
-        }
-    }
-}

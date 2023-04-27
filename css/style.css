@@ -547,18 +547,6 @@ template {
     flex-basis: 17%;
   }
 }
-@media print {
-  .main-header-container .main-header-sign-container {
-    flex-basis: 20%;
-  }
-  .main-header-container .main-header-sign-container img {
-    height: 70px;
-  }
-  .main-header-container .social-links .social-link {
-    margin: 0 10px;
-    font-size: 20px;
-  }
-}
 nav {
   display: flex;
   justify-content: center;
@@ -651,29 +639,6 @@ nav .open-menu-holder ul .nav-item a:hover {
 @media (min-width: 993px) {
   .main-header-container nav {
     flex-basis: 57%;
-  }
-  .main-header-container .fa-bars,
-  .main-header-container .mobile-close {
-    display: none;
-  }
-  .main-header-container .open-menu-holder {
-    display: block;
-    position: static;
-    background-color: transparent;
-    width: auto;
-    padding: 0;
-  }
-}
-@media print {
-  .main-header-container nav {
-    flex-basis: 65%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-header-container nav .open-menu-holder ul .nav-item {
-    padding: 10px;
-    font-size: 20px;
   }
   .main-header-container .fa-bars,
   .main-header-container .mobile-close {
@@ -959,11 +924,17 @@ nav .open-menu-holder ul .nav-item a:hover {
 .olejne-abstrakcje header {
   flex-basis: 95%;
 }
+.olejne-abstrakcje .gallery-picture-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
 .olejne-abstrakcje .gallery-picture {
   flex-basis: 33%;
 }
 .olejne-abstrakcje .gallery-picture .picture-horizontal {
-  width: 475px;
+  width: 460px;
 }
 .olejne-abstrakcje .gallery-picture .picture-vertical {
   width: 300px;
@@ -1363,42 +1334,6 @@ nav .open-menu-holder ul .nav-item a:hover {
     padding-top: 14px;
   }
 }
-@media print {
-  .contact .contact-container .picture {
-    margin-top: 55px;
-  }
-  .contact .contact-container .picture .img-vertical {
-    width: 250px;
-  }
-  .contact .contact-container .contact-container-top {
-    top: 140px;
-  }
-  .contact .contact-container .contact-container-top .contact-text {
-    flex-basis: 35%;
-    font-size: 13px;
-    line-height: 1.1em;
-    margin-left: 20px;
-  }
-  .contact .contact-container .contact-container-bottom {
-    top: 130px;
-  }
-  .contact .contact-container .contact-container-bottom .picture {
-    order: 1;
-  }
-  .contact .contact-container .contact-container-bottom .contact-sign-address {
-    flex-basis: 35%;
-    order: 2;
-  }
-  .contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign img {
-    width: 150px;
-  }
-  .contact .contact-container .contact-container-bottom .contact-sign-address address {
-    margin-top: 20px;
-  }
-  .contact .contact-container .contact-container-bottom .contact-sign-address address p {
-    margin: 0;
-  }
-}
 .footer-secondary, .footer-primary {
   background-color: rgba(255, 255, 255, 0.7);
   position: fixed;
@@ -1424,5 +1359,57 @@ nav .open-menu-holder ul .nav-item a:hover {
   .footer-primary .footer-text,
   .footer-secondary .footer-text {
     margin-left: 70px;
+  }
+}
+@media print {
+  @page {
+    margin: 2cm;
+  }
+  .main-header-container {
+    display: none;
+  }
+  .szkice footer,
+  .akrylowe-mandale footer,
+  .akrylowe-abstrakcje footer,
+  .olejne-abstrakcje footer,
+  .olejne-naturalistyczne footer {
+    display: none;
+  }
+  .contact .contact-container .picture {
+    margin-top: 35px;
+  }
+  .contact .contact-container .picture .img-vertical {
+    width: 250px;
+  }
+  .contact .contact-container .contact-container-top {
+    top: 100px;
+  }
+  .contact .contact-container .contact-container-top .contact-text {
+    flex-basis: 35%;
+    font-size: 13px;
+    line-height: 1em;
+    margin-left: 20px;
+  }
+  .contact .contact-container .contact-container-bottom {
+    top: 90px;
+  }
+  .contact .contact-container .contact-container-bottom .picture {
+    order: 1;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address {
+    flex-basis: 35%;
+    order: 2;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address .contact-sign img {
+    width: 150px;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address address {
+    margin-top: 20px;
+  }
+  .contact .contact-container .contact-container-bottom .contact-sign-address address p {
+    margin-left: -40px;
+  }
+  .contact .contact-container .contact-container-bottom footer {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,78 @@
+@media print {
+
+    @page {
+        margin: 2cm;
+    }
+
+    .main-header-container {
+        display: none;
+    }
+
+    .szkice,
+    .akrylowe-mandale,
+    .akrylowe-abstrakcje,
+    .olejne-abstrakcje,
+    .olejne-naturalistyczne {
+
+        footer {
+            display: none;
+        } 
+    }
+
+    .contact {
+
+        .contact-container {
+
+            .picture {
+                margin-top: 35px;
+
+                .img-vertical {
+                    width: 250px;
+                }
+            }
+           
+            .contact-container-top {
+                top: 100px;
+
+                .contact-text {
+                    flex-basis: 35%;
+                    font-size: 13px;
+                    line-height: 1em;
+                    margin-left: 20px;
+                }
+            }
+
+            .contact-container-bottom {
+                top: 90px;
+
+                .picture {
+                    order: 1;
+                }
+
+                .contact-sign-address {
+                    flex-basis: 35%;
+                    order: 2;
+                                         
+                    .contact-sign {
+                        
+                        img {
+                            width: 150px;
+                        }
+                    }
+
+                    address {
+                        margin-top: 20px;
+
+                        p {
+                            margin-left: -40px;
+                        }
+                    }
+                }    
+
+                footer {
+                    display: none;
+                }
+            }
+        }   
+    }
+}

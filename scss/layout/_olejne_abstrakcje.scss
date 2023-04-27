@@ -1,6 +1,10 @@
 .olejne-abstrakcje {
     @extend %gallery;
 
+    // .gallery-container {
+    //     max-width: 980px
+    // }
+
     .close-olejne-abstrakcje {
         @extend %close;
     }
@@ -9,11 +13,19 @@
         flex-basis: 95%;
     }
 
+    .gallery-picture-horizontal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
     .gallery-picture {
         flex-basis: 33%;
 
         .picture-horizontal {
-            width: 475px;
+            width: 460px;
+            // width: 530px;
             // @include overlaySprzedany;
         }
 
