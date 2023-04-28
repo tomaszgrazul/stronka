@@ -1,20 +1,20 @@
-    const modalOlejneAbstrakcje = document.querySelectorAll('.modal-img-olejne-abstrakcje');
+    const modaloilabstractions = document.querySelectorAll('.modal-img-oil-abstractions');
 
-    for (let i = 0, j = modalOlejneAbstrakcje.length; i < j; i++) {
+    for (let i = 0, j = modaloilabstractions.length; i < j; i++) {
 
-        modalOlejneAbstrakcje[i].addEventListener('click', function(){
+        modaloilabstractions[i].addEventListener('click', function(){
 
-            document.getElementById('my-modal-olejne-abstrakcje').style.display = 'block';
+            document.getElementById('my-modal-oil-abstractions').style.display = 'block';
             const image = document.createElement('img');
             image.setAttribute('class', 'modal-content');
-            image.setAttribute('id', 'img-olejne-abstrakcje');
+            image.setAttribute('id', 'img-oil-abstractions');
             document.querySelector('.scale-1').appendChild(image);
-            document.getElementById('img-olejne-abstrakcje').src = this.src;
+            document.getElementById('img-oil-abstractions').src = this.src;
         })
     };
 
-    document.getElementsByClassName('close-olejne-abstrakcje')[0].addEventListener('click', function() { 
-    document.getElementById('my-modal-olejne-abstrakcje').style.display = 'none';
+    document.getElementsByClassName('close-oil-abstractions')[0].addEventListener('click', function() { 
+    document.getElementById('my-modal-oil-abstractions').style.display = 'none';
     });
 
 

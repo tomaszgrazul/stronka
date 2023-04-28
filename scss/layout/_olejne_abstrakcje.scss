@@ -1,11 +1,11 @@
-.olejne-abstrakcje {
+.oil-abstractions {
     @extend %gallery;
 
     // .gallery-container {
     //     max-width: 980px
     // }
 
-    .close-olejne-abstrakcje {
+    .close-oil-abstractions {
         @extend %close;
     }
 
@@ -45,9 +45,9 @@
 }
 
 @media (max-width: 768px) {
-    .olejne-abstrakcje {
+    .oil-abstractions {
 
-        .close-olejne-abstrakcje {
+        .close-oil-abstractions {
             font-size: 60px;
         }
 
@@ -92,7 +92,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-    .olejne-abstrakcje {
+    .oil-abstractions {
 
         .gallery-container {
             margin-top: 180px;

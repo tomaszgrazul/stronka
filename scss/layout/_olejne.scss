@@ -1,4 +1,4 @@
-.olejne {
+.oil {
     height: 100vh;
     width: 100%;
     background-image: url('../img/olejne.jpg');
@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    .olejne-container {
+    .oil-container {
         height: 80px;
         color: rgb(194 24 24);
         background-color: rgba(255, 255, 255, 0.7);
@@ -22,7 +22,7 @@
             align-items: center;
             flex-basis: 100%;
             
-            .olejne-text {
+            .oil-text {
                 margin-left: 250px;
                 font-family: $third-font;
                 font-size: 22px;
@@ -57,7 +57,7 @@
                 }
             }
 
-            .btn-abstrakcje-olejne {   
+            .btn-abstractions-oil {   
                 border: 1px solid rgb(57, 57, 110);
                 margin-bottom: 50px;
             }
@@ -70,16 +70,16 @@
 }
 
 @media (max-width: 576px) {
-    .olejne {
+    .oil {
 
-        .olejne-container {
+        .oil-container {
             justify-content: center;
             top: 140px;
 
             header {
                 justify-content: center;
 
-                .olejne-text {
+                .oil-text {
                     margin: 0;
                 }
             }

@@ -1,20 +1,20 @@
-    const modalOlejneNaturalistyczne = document.querySelectorAll('.modal-img-olejne-naturalistyczne');
+    const modalOilnaturalistic = document.querySelectorAll('.modal-img-oil-naturalistic');
 
-    for (let i = 0, j = modalOlejneNaturalistyczne.length; i < j; i++) {
+    for (let i = 0, j = modalOilnaturalistic.length; i < j; i++) {
 
-        modalOlejneNaturalistyczne[i].addEventListener('click', function(){
+        modalOilnaturalistic[i].addEventListener('click', function(){
 
-            document.getElementById('my-modal-olejne-naturalistyczne').style.display = 'block';
+            document.getElementById('my-modal-oil-naturalistic').style.display = 'block';
             const image = document.createElement('img');
             image.setAttribute('class', 'modal-content');
-            image.setAttribute('id', 'img-olejne-naturalistyczne');
+            image.setAttribute('id', 'img-oil-naturalistic');
             document.querySelector('.scale-1').appendChild(image);
-            document.getElementById('img-olejne-naturalistyczne').src = this.src;
+            document.getElementById('img-oil-naturalistic').src = this.src;
         })
     };
 
-    document.getElementsByClassName('close-olejne-naturalistyczne')[0].addEventListener('click', function() { 
-    document.getElementById('my-modal-olejne-naturalistyczne').style.display = 'none';
+    document.getElementsByClassName('close-oil-naturalistic')[0].addEventListener('click', function() { 
+    document.getElementById('my-modal-oil-naturalistic').style.display = 'none';
     });
 
 

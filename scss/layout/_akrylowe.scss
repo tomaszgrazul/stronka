@@ -1,4 +1,4 @@
-.akrylowe {
+.acrylic {
     height: 100vh;
     width: 100%;
     background-image: url('../img/mandala.jpg');
@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    .akrylowe-container {
+    .acrylic-container {
         height: 80px;
         color: rgb(194 24 24);
         background-color: rgba(255, 255, 255, 0.7);
@@ -22,7 +22,7 @@
             align-items: center;
             flex-basis: 100%;
 
-            .akrylowe-text {
+            .acrylic-text {
                 margin-left: 250px;
                 font-family: $third-font;
                 font-size: 22px;
@@ -57,12 +57,12 @@
                 }
             }
 
-            .btn-mandale {
+            .btn-mandalas {
                 border: 1px solid rgb(57, 57, 110);
                 margin-bottom: 50px;
             }
             
-            .btn-abstrakcje {
+            .btn-abstractions {
                 border: 1px solid rgb(57, 57, 110);
             }
         }
@@ -70,16 +70,16 @@
 }
 
 @media (max-width: 576px) {
-    .akrylowe {
+    .acrylic {
 
-        .akrylowe-container {
+        .acrylic-container {
             justify-content: center;
             top: 140px;
 
             header {
                 justify-content: center;
 
-                .akrylowe-text {
+                .acrylic-text {
                     margin: 0;
                 }
             }

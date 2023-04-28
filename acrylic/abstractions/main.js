@@ -1,20 +1,20 @@
-var modalAkryloweAbstrakcje = document.querySelectorAll('.modal-img-akrylowe-abstrakcje');
+var modalacrylicabstractions = document.querySelectorAll('.modal-img-acrylic-abstractions');
 
-    for (var i = 0, j = modalAkryloweAbstrakcje.length; i < j; i++) {
+    for (var i = 0, j = modalacrylicabstractions.length; i < j; i++) {
 
-        modalAkryloweAbstrakcje[i].addEventListener('click', function(){
+        modalacrylicabstractions[i].addEventListener('click', function(){
 
-            document.getElementById('my-modal-akrylowe-abstrakcje').style.display = 'block';
+            document.getElementById('my-modal-acrylic-abstractions').style.display = 'block';
             const image = document.createElement('img');
             image.setAttribute('class', 'modal-content');
-            image.setAttribute('id', 'img-akrylowe-abstrakcje');
+            image.setAttribute('id', 'img-acrylic-abstractions');
             document.querySelector('.scale-1').appendChild(image);
-            document.getElementById('img-akrylowe-abstrakcje').src = this.src;
+            document.getElementById('img-acrylic-abstractions').src = this.src;
         })
     };
 
-    document.getElementsByClassName('close-akrylowe-abstrakcje')[0].addEventListener('click', function() { 
-        document.getElementById('my-modal-akrylowe-abstrakcje').style.display = 'none';
+    document.getElementsByClassName('close-acrylic-abstractions')[0].addEventListener('click', function() { 
+        document.getElementById('my-modal-acrylic-abstractions').style.display = 'none';
     });
 
     document.getElementsByClassName('fa-bars')[0].addEventListener('click', function() {

@@ -1,7 +1,7 @@
-.olejne-naturalistyczne {
+.oil-naturalistic {
     @extend %gallery;
 
-    .close-olejne-naturalistyczne {
+    .close-oil-naturalistic {
         @extend %close;
     }
 
@@ -21,9 +21,9 @@
             width: 350px;
             // @include overlaySprzedany;
 
-            .overlay {
-                font-size: 30px;
-            }
+            // .overlay {
+            //     font-size: 30px;
+            // }
         }
     }
 
@@ -35,9 +35,9 @@
 }
 
 @media (max-width: 768px) {
-    .olejne-naturalistyczne {
+    .oil-naturalistic {
 
-        .close-olejne-naturalistyczne {
+        .close-oil-naturalistic {
             font-size: 60px;
         }
 
@@ -81,7 +81,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-    .olejne-naturalistyczne {
+    .oil-naturalistic {
 
         .gallery-container {
             margin-top: 180px;

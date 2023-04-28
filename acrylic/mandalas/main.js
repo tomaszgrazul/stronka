@@ -1,20 +1,20 @@
-var modalAkryloweMandale = document.querySelectorAll('.modal-img-akrylowe-mandale');
+var modalacrylicmandalas = document.querySelectorAll('.modal-img-acrylic-mandalas');
 
-    for (var i = 0, j = modalAkryloweMandale.length; i < j; i++) {
+    for (var i = 0, j = modalacrylicmandalas.length; i < j; i++) {
 
-        modalAkryloweMandale[i].addEventListener('click', function(){
+        modalacrylicmandalas[i].addEventListener('click', function(){
 
-            document.getElementById('my-modal-akrylowe-mandale').style.display = 'block';
+            document.getElementById('my-modal-acrylic-mandalas').style.display = 'block';
             const image = document.createElement('img');
             image.setAttribute('class', 'modal-content');
-            image.setAttribute('id', 'img-akrylowe-mandale');
+            image.setAttribute('id', 'img-acrylic-mandalas');
             document.querySelector('.scale-1').appendChild(image);
-            document.getElementById('img-akrylowe-mandale').src = this.src;
+            document.getElementById('img-acrylic-mandalas').src = this.src;
         })
     };
 
-    document.getElementsByClassName('close-akrylowe-mandale')[0].addEventListener('click', function() { 
-        document.getElementById('my-modal-akrylowe-mandale').style.display = 'none';
+    document.getElementsByClassName('close-acrylic-mandalas')[0].addEventListener('click', function() { 
+        document.getElementById('my-modal-acrylic-mandalas').style.display = 'none';
     });
 
     document.getElementsByClassName('fa-bars')[0].addEventListener('click', function() {

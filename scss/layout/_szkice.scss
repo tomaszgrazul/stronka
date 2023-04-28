@@ -1,12 +1,16 @@
-.szkice {
+.sketches {
    @extend %gallery;
 
-   .close-szkice {
+   .close-sketches {
         @extend %close;
     }
 
     header {
         flex-basis: 95%;
+
+        p {
+            margin: 20px;
+        }
     }
 
     .gallery-picture {
@@ -23,9 +27,9 @@
 }
 
 @media (max-width: 768px) {
-    .szkice {
+    .sketches {
 
-        .close-szkice {
+        .close-sketches {
             font-size: 60px;
         }
 
@@ -61,7 +65,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-    .szkice {
+    .sketches {
         .gallery-container {
 
             header {

@@ -1,22 +1,22 @@
-    const modalSzkice = document.querySelectorAll('.modal-img-szkice');
+    const modalsketches = document.querySelectorAll('.modal-img-sketches');
 
-    for (let i = 0, j = modalSzkice.length; i < j; i++) {
+    for (let i = 0, j = modalsketches.length; i < j; i++) {
 
-        modalSzkice[i].addEventListener('click', function(){
+        modalsketches[i].addEventListener('click', function(){
 
-            document.getElementById('my-modal-szkice').style.display = 'block';
+            document.getElementById('my-modal-sketches').style.display = 'block';
 
             const image = document.createElement('img');
             image.setAttribute('class', 'modal-content');
-            image.setAttribute('id', 'img-szkice');
+            image.setAttribute('id', 'img-sketches');
             document.querySelector('.scale-1').appendChild(image);
-            document.getElementById('img-szkice').src = this.src;
+            document.getElementById('img-sketches').src = this.src;
         })
     };
 
-    document.getElementsByClassName('close-szkice')[0].addEventListener('click', function() { 
+    document.getElementsByClassName('close-sketches')[0].addEventListener('click', function() { 
 
-        document.getElementById('my-modal-szkice').style.display = 'none';
+        document.getElementById('my-modal-sketches').style.display = 'none';
     });
 
 

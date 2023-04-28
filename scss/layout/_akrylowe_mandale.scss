@@ -1,11 +1,11 @@
-.akrylowe-mandale {
+.acrylic-mandalas {
     @extend %gallery;
 
     .gallery-container {
         max-width: 1900px;
     }
 
-    .close-akrylowe-mandale {
+    .close-acrylic-mandalas {
         @extend %close;
     }
 
@@ -29,9 +29,9 @@
 }
 
 @media (max-width: 768px) {
-    .akrylowe-mandale {
+    .acrylic-mandalas {
 
-        .close-akrylowe-mandale {
+        .close-acrylic-mandalas {
             font-size: 60px;
         }
 
@@ -68,7 +68,7 @@
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-    .akrylowe-mandale {
+    .acrylic-mandalas {
 
         .gallery-container {
 

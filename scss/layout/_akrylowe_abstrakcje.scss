@@ -1,4 +1,4 @@
-.akrylowe-abstrakcje {
+.acrylic-abstractions {
     @extend %gallery;
     // position: initial;
 
@@ -9,7 +9,7 @@
         }
     }
 
-    .close-akrylowe-abstrakcje {
+    .close-acrylic-abstractions {
         @extend %close;
     }
 
@@ -29,9 +29,9 @@
 }
 
 @media (max-width: 440px) {
-    .akrylowe-abstrakcje {
+    .acrylic-abstractions {
 
-        .close-akrylowe-abstrakcje {
+        .close-acrylic-abstractions {
             font-size: 60px;
         }
 
@@ -58,7 +58,7 @@
 }
 
 @media (min-width: 441px) and (max-width: 992px) {
-    .akrylowe-abstrakcje {
+    .acrylic-abstractions {
 
         .gallery-container {
             margin-top: 180px;
