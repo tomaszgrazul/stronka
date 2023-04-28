@@ -30,6 +30,8 @@
     .gallery-text-3 {
         margin: 0;
     }
+
+    @extend %basket;
 }
 
 @media (max-width: 768px) {

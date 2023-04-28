@@ -1,3 +1,25 @@
+.olejne-naturalistyczne .under-picture, .akrylowe-abstrakcje .under-picture, .akrylowe-mandale .gallery-picture .under-picture {
+  display: flex;
+  justify-content: center;
+}
+.olejne-naturalistyczne .under-picture .under-1, .akrylowe-abstrakcje .under-picture .under-1, .akrylowe-mandale .gallery-picture .under-picture .under-1 {
+  margin-left: 60px;
+}
+.olejne-naturalistyczne .under-picture .under-2, .akrylowe-abstrakcje .under-picture .under-2, .akrylowe-mandale .gallery-picture .under-picture .under-2 {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.olejne-naturalistyczne .under-picture img, .akrylowe-abstrakcje .under-picture img, .akrylowe-mandale .gallery-picture .under-picture img {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+.olejne-naturalistyczne .under-picture img:hover, .akrylowe-abstrakcje .under-picture img:hover, .akrylowe-mandale .gallery-picture .under-picture img:hover {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
 .main-section .top-container .top-ewa, .main-section .top-container .top-galeria {
   margin: 30px;
   text-shadow: 0px 5px rgb(53, 53, 53);
@@ -43,7 +65,6 @@
 .szkice img, .olejne-naturalistyczne img, .olejne-abstrakcje img, .akrylowe-abstrakcje img, .akrylowe-mandale img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 .szkice .gallery-text-1, .olejne-naturalistyczne .gallery-text-1, .olejne-abstrakcje .gallery-text-1, .akrylowe-abstrakcje .gallery-text-1, .akrylowe-mandale .gallery-text-1 {
   text-align: center;
@@ -91,14 +112,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.szkice .gallery-container .gallery-picture .picture-horizontal, .olejne-naturalistyczne .gallery-container .gallery-picture .picture-horizontal, .olejne-abstrakcje .gallery-container .gallery-picture .picture-horizontal, .akrylowe-abstrakcje .gallery-container .gallery-picture .picture-horizontal, .akrylowe-mandale .gallery-container .gallery-picture .picture-horizontal,
-.szkice .gallery-container .gallery-picture .picture-vertical,
-.olejne-naturalistyczne .gallery-container .gallery-picture .picture-vertical,
-.olejne-abstrakcje .gallery-container .gallery-picture .picture-vertical,
-.akrylowe-abstrakcje .gallery-container .gallery-picture .picture-vertical,
-.akrylowe-mandale .gallery-container .gallery-picture .picture-vertical {
-  height: 100%;
 }
 .szkice .gallery-container .gallery-picture .modal, .olejne-naturalistyczne .gallery-container .gallery-picture .modal, .olejne-abstrakcje .gallery-container .gallery-picture .modal, .akrylowe-abstrakcje .gallery-container .gallery-picture .modal, .akrylowe-mandale .gallery-container .gallery-picture .modal {
   display: none;
@@ -516,6 +529,8 @@ template {
   transition: all 0.3s;
   text-decoration: none;
   color: #9C9C9C;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
   padding-left: 10px;
 }
 .main-header-container .language-switch a:hover {
@@ -740,27 +755,6 @@ nav .open-menu-holder ul .nav-item a:hover {
 }
 .akrylowe-mandale .gallery-picture .picture-horizontal {
   width: 450px;
-}
-.akrylowe-mandale .gallery-picture .under-picture {
-  display: flex;
-  justify-content: center;
-}
-.akrylowe-mandale .gallery-picture .under-picture .under-1 {
-  margin-left: 60px;
-}
-.akrylowe-mandale .gallery-picture .under-picture .under-2 {
-  display: flex;
-  align-items: center;
-  margin-left: 20px;
-}
-.akrylowe-mandale .gallery-picture .under-picture img {
-  width: 55px;
-  height: 55px;
-  object-fit: contain;
-}
-.akrylowe-mandale .gallery-picture .under-picture img:hover {
-  opacity: 0.7;
-  transition: all 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -1243,11 +1237,22 @@ nav .open-menu-holder ul .nav-item a:hover {
   font-style: normal;
   margin-top: 40px;
 }
+.contact .contact-container .contact-container-bottom .contact-sign-address address a {
+  text-decoration: none;
+  text-transform: lowercase;
+  padding: 10px;
+  margin-left: 30px;
+  color: #AA2C18;
+}
+.contact .contact-container .contact-container-bottom .contact-sign-address address a:hover {
+  transition: all 0.3s;
+  opacity: 0.8;
+}
 .contact .contact-container .contact-container-bottom .contact-sign-address address p {
   padding: 10px;
   margin-left: 30px;
-  text-transform: none;
   color: #AA2C18;
+  text-transform: lowercase;
 }
 
 @media (max-width: 576px) {
@@ -1264,6 +1269,9 @@ nav .open-menu-holder ul .nav-item a:hover {
     flex-basis: 66%;
     font-size: 13px;
     margin-left: 0;
+  }
+  .contact .contact-container .contact-container-top .contact-text h2 {
+    padding-top: 20px;
   }
   .contact .contact-container .contact-container-bottom .contact-sign-address {
     flex-basis: 45%;
@@ -1402,8 +1410,11 @@ nav .open-menu-holder ul .nav-item a:hover {
   .contact .contact-container .contact-container-bottom .contact-sign-address address {
     margin-top: 20px;
   }
+  .contact .contact-container .contact-container-bottom .contact-sign-address address a {
+    margin-left: 10px;
+  }
   .contact .contact-container .contact-container-bottom .contact-sign-address address p {
-    margin-left: -40px;
+    margin-left: -50px;
   }
   .contact .contact-container .contact-container-bottom footer {
     display: none;
