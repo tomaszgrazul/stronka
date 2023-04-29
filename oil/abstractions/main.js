@@ -14,7 +14,9 @@
     };
 
     document.getElementsByClassName('close-oil-abstractions')[0].addEventListener('click', function() { 
-    document.getElementById('my-modal-oil-abstractions').style.display = 'none';
+
+        document.getElementById('my-modal-oil-abstractions').style.display = 'none';
+        document.getElementById("img-oil-abstractions").remove();
     });
 
 

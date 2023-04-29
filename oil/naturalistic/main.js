@@ -14,7 +14,9 @@
     };
 
     document.getElementsByClassName('close-oil-naturalistic')[0].addEventListener('click', function() { 
-    document.getElementById('my-modal-oil-naturalistic').style.display = 'none';
+
+        document.getElementById('my-modal-oil-naturalistic').style.display = 'none';
+        document.getElementById("img-oil-naturalistic").remove();
     });
 
 

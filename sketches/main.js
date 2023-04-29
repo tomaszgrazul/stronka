@@ -17,6 +17,7 @@
     document.getElementsByClassName('close-sketches')[0].addEventListener('click', function() { 
 
         document.getElementById('my-modal-sketches').style.display = 'none';
+        document.getElementById("img-sketches").remove();
     });
 
 

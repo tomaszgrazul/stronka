@@ -14,7 +14,9 @@ var modalacrylicabstractions = document.querySelectorAll('.modal-img-acrylic-abs
     };
 
     document.getElementsByClassName('close-acrylic-abstractions')[0].addEventListener('click', function() { 
+
         document.getElementById('my-modal-acrylic-abstractions').style.display = 'none';
+        document.getElementById("img-acrylic-abstractions").remove();
     });
 
     document.getElementsByClassName('fa-bars')[0].addEventListener('click', function() {

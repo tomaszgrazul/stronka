@@ -14,7 +14,9 @@ var modalacrylicmandalas = document.querySelectorAll('.modal-img-acrylic-mandala
     };
 
     document.getElementsByClassName('close-acrylic-mandalas')[0].addEventListener('click', function() { 
+
         document.getElementById('my-modal-acrylic-mandalas').style.display = 'none';
+        document.getElementById("img-acrylic-mandalas").remove();
     });
 
     document.getElementsByClassName('fa-bars')[0].addEventListener('click', function() {
